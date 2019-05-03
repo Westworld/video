@@ -1,0 +1,292 @@
+﻿{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 20,
+	"markerBody": 40,
+	"markerBreak": 44,
+	"markerFooter": 76,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Viereck1": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 582,
+					"height": 42
+				},
+				"Linie1": {
+					"type": "line",
+					"top": 18,
+					"left": 0,
+					"width": 582
+				},
+				"Text2": {
+					"type": "text",
+					"top": 3,
+					"left": 8,
+					"width": 330,
+					"height": 12,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"fontSize": 9,
+					"text": "Name"
+				},
+				"Linie3": {
+					"type": "line",
+					"top": 0,
+					"left": 349,
+					"height": 42
+				},
+				"Text3": {
+					"type": "text",
+					"top": 3,
+					"left": 351,
+					"width": 210,
+					"height": 12,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"fontSize": 9,
+					"text": "Vorname"
+				},
+				"Linie4": {
+					"type": "line",
+					"top": 0,
+					"left": 562,
+					"height": 42
+				},
+				"Text4": {
+					"type": "text",
+					"top": 3,
+					"left": 564,
+					"width": 14,
+					"height": 12,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"fontSize": 9,
+					"text": "Geschlecht"
+				},
+				"Feld2": {
+					"type": "input",
+					"top": 21,
+					"left": 8,
+					"width": 332,
+					"height": 16,
+					"dataSource": "[Personen:17]Bild:2",
+					"stroke": "#000000",
+					"fontSize": 12,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Feld3": {
+					"type": "input",
+					"top": 21,
+					"left": 351,
+					"width": 206,
+					"height": 16,
+					"dataSource": "[Personen:17]IMDB:3",
+					"stroke": "#000000",
+					"fontSize": 12,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Feld4": {
+					"type": "input",
+					"top": 21,
+					"left": 564,
+					"width": 15,
+					"height": 16,
+					"dataSource": "[Personen:17]Bild2:4",
+					"stroke": "#000000",
+					"fontSize": 12,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Feld1": {
+					"type": "input",
+					"top": 23,
+					"left": 586,
+					"width": 332,
+					"height": 16,
+					"dataSource": "[Personen:17]Suchname:5",
+					"stroke": "#000000",
+					"fontSize": 12,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable1": {
+					"type": "button",
+					"top": 50,
+					"left": 2,
+					"width": 128,
+					"height": 20,
+					"dataSource": "Suchen",
+					"shortcutKey": "s",
+					"shortcutAccel": true,
+					"text": "Suchen",
+					"fontFamily": "Arial",
+					"fontSize": 12,
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "button",
+					"top": 50,
+					"left": 131,
+					"width": 128,
+					"height": 20,
+					"dataSource": "Sortieren",
+					"text": "Sortieren",
+					"fontFamily": "Arial",
+					"fontSize": 12,
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "button",
+					"top": 50,
+					"left": 295,
+					"width": 128,
+					"height": 20,
+					"dataSource": "Neu",
+					"text": "Neu",
+					"fontFamily": "Arial",
+					"fontSize": 12,
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Schaltfläche1": {
+					"type": "button",
+					"top": 51,
+					"left": 486,
+					"width": 95,
+					"height": 22,
+					"dataSource": "OK",
+					"action": "accept",
+					"text": "OK",
+					"fontFamily": "Arial",
+					"fontSize": 12,
+					"defaultButton": true,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

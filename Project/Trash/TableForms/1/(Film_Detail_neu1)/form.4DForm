@@ -1,0 +1,663 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"menuBar": "Editmodus",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "DIN A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Viereck": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 695,
+					"height": 553,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"fill": "#000000"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Fanart": {
+					"type": "input",
+					"top": 3,
+					"left": 4,
+					"width": 688,
+					"height": 548,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSourceTypeHint": "picture",
+					"fill": "transparent",
+					"pictureFormat": "scaled",
+					"dragging": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Feld": {
+					"type": "input",
+					"top": 11,
+					"left": 509,
+					"width": 179,
+					"height": 181,
+					"sizingX": "move",
+					"dataSource": "Form:C1466.Movie.Cover",
+					"dataSourceTypeHint": "picture",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"pictureFormat": "proportionalCenter",
+					"dragging": "custom",
+					"method": "ObjectMethods/Feld.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"Feld1": {
+					"type": "input",
+					"top": 30,
+					"left": 8,
+					"width": 496,
+					"height": 28,
+					"dataSource": "Form:C1466.Movie.DtTitel",
+					"stroke": "#FDCC09",
+					"fontFamily": ".Helvetica Neue DeskInterface Regular",
+					"fontSize": 18,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Feld2": {
+					"type": "input",
+					"top": 54,
+					"left": 8,
+					"width": 496,
+					"height": 20,
+					"dataSource": "Form:C1466.Movie.Titel_EN",
+					"stroke": "#FDCC09",
+					"fontFamily": ".Helvetica Neue DeskInterface Regular",
+					"fontSize": 14,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Feld3": {
+					"type": "input",
+					"top": 145,
+					"left": 8,
+					"width": 496,
+					"height": 174,
+					"sizingX": "grow",
+					"dataSource": "Form:C1466.Movie.Inhalt",
+					"stroke": "#EBFDF3",
+					"fontFamily": ".Helvetica Neue DeskInterface Regular",
+					"fontSize": 14,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable": {
+					"type": "input",
+					"top": 77,
+					"left": 8,
+					"width": 368,
+					"height": 17,
+					"dataSource": "Form:C1466.Movie.Land+\", \"+Form:C1466.Movie.Jahr+\" - \"+String:C10(Form:C1466.Movie.Länge)+\" min, \"+String:C10(Form:C1466.Movie.purchasedate)",
+					"stroke": "#FFFFFF",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Actoranzeige": {
+					"type": "listbox",
+					"top": 329,
+					"left": 8,
+					"width": 687,
+					"height": 210,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"focusable": false,
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "160px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"selectionMode": "none",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"stroke": "#85A2DF",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"method": "ObjectMethods/Actoranzeige.4dm",
+					"events": [
+						"onDoubleClick"
+					],
+					"columns": [
+						{
+							"name": "Arr1",
+							"dataSource": "Arr1",
+							"dataSourceTypeHint": "picture",
+							"width": 683,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"pictureFormat": "proportionalCenter",
+							"stroke": "#85A2DF",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Kopf1",
+								"text": "Kopf1",
+								"dataSource": "Kopf1",
+								"stroke": "#85A2DF"
+							},
+							"footer": {
+								"name": "Fußteil1",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#85A2DF"
+							}
+						}
+					]
+				},
+				"Rating1": {
+					"type": "subform",
+					"top": 101,
+					"left": 8,
+					"width": 180,
+					"height": 19,
+					"dataSource": "Rating1",
+					"detailForm": "Ratings",
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"method": "ObjectMethods/Rating1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Rating2": {
+					"type": "subform",
+					"top": 101,
+					"left": 196,
+					"width": 180,
+					"height": 19,
+					"dataSource": "Rating2",
+					"detailForm": "Ratings",
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"method": "ObjectMethods/Rating2.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Feld16": {
+					"type": "checkbox",
+					"top": 65,
+					"left": 432,
+					"width": 57,
+					"height": 14,
+					"sizingX": "grow",
+					"text": "Astrid",
+					"dataSource": "[Filme:1]merklisteA:29",
+					"stroke": "#EBFDF3",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 10,
+					"method": "ObjectMethods/Feld16.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"Feld17": {
+					"type": "checkbox",
+					"top": 79,
+					"left": 432,
+					"width": 57,
+					"height": 14,
+					"sizingX": "grow",
+					"text": "Thomas",
+					"dataSource": "[Filme:1]merklisteT:30",
+					"stroke": "#EBFDF3",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 10,
+					"method": "ObjectMethods/Feld17.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"Feld18": {
+					"type": "input",
+					"top": 126,
+					"left": 8,
+					"width": 496,
+					"height": 13,
+					"sizingX": "grow",
+					"dataSource": "Form:C1466.Movie.streamdetails",
+					"stroke": "#EBFDF3",
+					"fontFamily": ".Helvetica Neue DeskInterface Regular",
+					"fontSize": 10,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Feld19": {
+					"type": "input",
+					"top": 212,
+					"left": 509,
+					"width": 176,
+					"height": 108,
+					"dataSource": "[Bilder:8]dasbild:6",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"pictureFormat": "proportionalCenter",
+					"dragging": "custom",
+					"method": "ObjectMethods/Feld19.4dm",
+					"events": [
+						"onClick",
+						"onDoubleClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Feld8": {
+					"type": "input",
+					"top": 77,
+					"left": 342,
+					"width": 56,
+					"height": 13,
+					"dataSource": "[Filme:1]imdb:15",
+					"stroke": "#806000",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 10,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Feld9": {
+					"type": "input",
+					"top": 77,
+					"left": 450,
+					"width": 45,
+					"height": 14,
+					"dataSource": "[Filme:1]MovieDB:24",
+					"stroke": "#806000",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 10,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Feld4": {
+					"type": "input",
+					"top": 9,
+					"left": 8,
+					"width": 496,
+					"height": 22,
+					"dataSource": "[Filme:1]DtTitel:9",
+					"stroke": "#FDCC09",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 18,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Feld5": {
+					"type": "input",
+					"top": 114,
+					"left": 8,
+					"width": 496,
+					"height": 18,
+					"sizingX": "grow",
+					"dataSource": "[Filme:1]MKV_Pfad:22",
+					"stroke": "#EBFDF3",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 14,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Schaltfläche": {
+					"type": "button",
+					"top": 13,
+					"left": 577,
+					"width": 97,
+					"height": 18,
+					"action": "previousPage",
+					"text": "Back",
+					"events": [
+						"onClick"
+					]
+				},
+				"Feld6": {
+					"type": "input",
+					"top": 141,
+					"left": 8,
+					"width": 496,
+					"height": 69,
+					"sizingX": "grow",
+					"dataSource": "[Filme:1]Bemerkung:17",
+					"stroke": "#EBFDF3",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 14,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Feld7": {
+					"type": "input",
+					"top": 114,
+					"left": 524,
+					"width": 168,
+					"height": 18,
+					"sizingX": "grow",
+					"dataSource": "[Filme:1]Mediaart:19",
+					"stroke": "#EBFDF3",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 14,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Feld10": {
+					"type": "input",
+					"top": 35,
+					"left": 8,
+					"width": 496,
+					"height": 22,
+					"dataSource": "[Filme:1]Titel_Sort:32",
+					"stroke": "#FDCC09",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 18,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Feld11": {
+					"type": "input",
+					"top": 213,
+					"left": 8,
+					"width": 496,
+					"height": 35,
+					"sizingX": "grow",
+					"dataSource": "[Filme:1]streamdetails:35",
+					"stroke": "#EBFDF3",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 14,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Feld12": {
+					"type": "input",
+					"top": 263,
+					"left": 8,
+					"width": 496,
+					"height": 69,
+					"sizingX": "grow",
+					"dataSource": "[Filme:1]Crew:36",
+					"stroke": "#EBFDF3",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 14,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Feld13": {
+					"type": "input",
+					"top": 352,
+					"left": 8,
+					"width": 250,
+					"height": 18,
+					"sizingX": "grow",
+					"dataSource": "[Filme:1]",
+					"stroke": "#EBFDF3",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 14,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Feld14": {
+					"type": "input",
+					"top": 352,
+					"left": 278,
+					"width": 250,
+					"height": 18,
+					"sizingX": "grow",
+					"dataSource": "[Filme:1]",
+					"stroke": "#EBFDF3",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 14,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Feld15": {
+					"type": "input",
+					"top": 76,
+					"left": 542,
+					"width": 55,
+					"height": 13,
+					"dataSource": "[Filme:1]Kodi_ID:31",
+					"stroke": "#806000",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 10,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"List Boxbilder": {
+					"type": "listbox",
+					"top": 384,
+					"left": 16,
+					"width": 635,
+					"height": 155,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "currentSelection",
+					"movableRows": false,
+					"rowHeight": "100px",
+					"highlightSet": "$ListboxSet0",
+					"table": 8,
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "Spalte1",
+							"dataSource": "[Bilder:8]dasbild:6",
+							"dataSourceTypeHint": "picture",
+							"width": 620,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"pictureFormat": "proportionalCenter",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Kopf2",
+								"text": "Kopf2",
+								"dataSource": "Kopf2"
+							},
+							"footer": {
+								"name": "Fußteil2",
+								"timeFormat": "hh_mm_ss"
+							}
+						}
+					]
+				},
+				"Schaltfläche1": {
+					"type": "button",
+					"top": 35,
+					"left": 577,
+					"width": 97,
+					"height": 18,
+					"text": "hole Bilder",
+					"method": "ObjectMethods/Schaltfläche1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text": {
+					"type": "text",
+					"top": 78,
+					"left": 301,
+					"width": 32,
+					"height": 12,
+					"stroke": "#FFFFFF",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 9,
+					"text": "IMDB"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 77,
+					"left": 405,
+					"width": 37,
+					"height": 12,
+					"stroke": "#FFFFFF",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 9,
+					"text": "MovieDB"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 78,
+					"left": 507,
+					"width": 37,
+					"height": 12,
+					"stroke": "#FFFFFF",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 9,
+					"text": "KodiID"
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,71 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "DIN A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Viereck": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 1,
+					"width": 752,
+					"height": 593,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"fill": "#000000"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 0,
+					"left": -2,
+					"width": 753,
+					"height": 593,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "Form:C1466.bilder[Form:C1466.BildIndex].dasbild",
+					"dataSourceTypeHint": "picture",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"pictureFormat": "proportionalCenter",
+					"dragging": "custom",
+					"dropping": "custom",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

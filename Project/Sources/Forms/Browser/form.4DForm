@@ -1,0 +1,131 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 15,
+	"bottomMargin": 15,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "DIN A4",
+		"paperWidth": "596pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Variable2": {
+					"type": "input",
+					"top": 630,
+					"left": 78,
+					"width": 795,
+					"height": 32,
+					"sizingX": "grow",
+					"sizingY": "move",
+					"dataSource": "vstatus",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 12,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Button1": {
+					"type": "button",
+					"top": 630,
+					"left": 15,
+					"width": 55,
+					"height": 19,
+					"sizingY": "move",
+					"dataSource": "Button1",
+					"action": "openBackURL",
+					"text": "back",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 12,
+					"events": [
+						"onClick"
+					]
+				},
+				"mybrowser": {
+					"type": "webArea",
+					"top": 10,
+					"left": 15,
+					"width": 842,
+					"height": 610,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"urlSource": "vstatus",
+					"progressSource": "vprogress",
+					"webEngine": "embedded",
+					"contextMenu": "none",
+					"borderStyle": "none",
+					"method": "ObjectMethods/mybrowser.4dm",
+					"events": [
+						"onEndURLLoading",
+						"onURLLoadingError"
+					]
+				},
+				"Thermometer": {
+					"type": "progress",
+					"top": 672,
+					"left": 78,
+					"width": 773,
+					"height": 10,
+					"sizingX": "grow",
+					"sizingY": "move",
+					"dataSource": "vProgress",
+					"continuousExecution": false,
+					"min": 1,
+					"max": 100,
+					"graduationStep": 10,
+					"step": 10,
+					"enterable": true,
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 12,
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"Button2": {
+					"type": "button",
+					"top": 650,
+					"left": 15,
+					"width": 55,
+					"height": 19,
+					"sizingY": "move",
+					"dataSource": "Button1",
+					"text": "Go",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 12,
+					"method": "ObjectMethods/Button2.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

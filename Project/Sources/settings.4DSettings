@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><preferences stamp="569">
+	<com.4d>
+		<database>
+			<cache flush_buffer_delay="20s" size_fixed="32" size_maximum="3000" size_reserved="128"/>
+			<misc automatic_transactions="false" use_ast_interpreter="false"/>
+                                                                                                                                                                                        		</database>
+		<general startup_environnement="1">
+			<mover always_display_dialog="2"/>
+		</general>
+		<interface>
+			<user default_user="0" flush_window="false" formula_editor_with_full_lists="true" print_progress="false" sort_list="false" splash_screen="true"/>
+			<misc formula_editor_with_full_lists="false" mac_auto_platform="-1" platform="-1" win_auto_platform="-1"/>
+			<shortcuts>
+				<add_subform alt="false" command="true" ctrl="false" key="6957" key_code="47" shift="false"/>
+				<cancel_input_form alt="false" command="true" ctrl="false" key="13595" key_code="46" shift="false"/>
+				<accept_input_form alt="false" command="false" ctrl="false" key="19459" key_code="3" shift="false"/>
+                                                                                                                                                                                                                                                                                                                                                                              			</shortcuts>
+			<developper allow_read_only_structure="false" design_acces="0" disable_formula_editor_filtering="true" display_toolbar="true"/>
+                                                                                                                                                                                                                                                                                                                                                                            		</interface>
+		<web>
+			<standalone_server>
+				<configuration allow_ssl="false" automatic_session_management="false" ip_address="0" listening_address="::" port_number="8080" publish_at_startup="true"/>
+				<options>
+					<web_processes max_concurrent="32000" pool_max="500" timeout_for_inactives="18000"/>
+					<cache cache_max_size="100" use_4d_web_cache="true"/>
+					<web_passwords generic_web_user="1" kind="1" with_4d_passwords="true"/>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                          				</options>
+				<log format="4" tokens="BYTES_RECEIVED;BYTES_SENT;URL;DATE;TIME;METHOD;CS(REFERER)">
+					<backup mode="1" size="10485760"/>
+                                                                                                                                                              				</log>
+				<webservices allow_requests="false" wizard_method_prefix="">
+					<server allow_requests="false"/>
+				</webservices>
+				<misc use_4dvar_comments="true" use_js_for_entry_control="false"/>
+				<rest launch_at_startup="true"/>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              			</standalone_server>
+			<remote>
+				<options>
+					<web_processes timeout_for_inactives="18000"/>
+					<cache cache_max_size="524288"/>
+					<web_passwords generic_web_user="1"/>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                          				</options>
+				<configuration allow_ssl="false" automatic_session_management="false" ip_address="0"/>
+				<webservices allow_requests="false" wizard_method_prefix=""/>
+				<misc use_4dvar_comments="true"/>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      			</remote>
+                                                                                                                                                                                        		</web>
+		<compiler>
+			<typage default_for_button="1" default_for_numeric="1"/>
+			<options error_file="true" fat_binary="true" symbol_file="true"/>
+                                                                                              		</compiler>
+		<sql>
+			<publication port_number="1919"/>
+			<access data_read_only="0" data_read_write="0" full="1"/>
+			<engine case_sensitive="false"/>
+                                                                                                                                                                                                          		</sql>
+		<server>
+			<ip_config>
+				<allow_deny_table>
+					<allow_deny address="*" allow="true"/>
+					<allow_deny address="*" allow="true"/>
+                                                                                                                                                              				</allow_deny_table>
+                                                                                                                              			</ip_config>
+			<misc/>
+			<network>
+				<options publication_name="Videodatenbank" use_legacy_network_layer="false"/>
+			</network>
+                                                                                                                                                                                        		</server>
+		<deployment>
+			<options/>
+		</deployment>
+                                                                                                                                                                                                                                                                                                                                                                                                                                      	</com.4d>
+                              </preferences>

@@ -1,0 +1,126 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperWidth": "594pt",
+		"paperHeight": "841pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Variable": {
+					"type": "input",
+					"top": 28,
+					"left": 22,
+					"width": 258,
+					"height": 16,
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/Variable.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"List Box": {
+					"type": "listbox",
+					"top": 64,
+					"left": 22,
+					"width": 481,
+					"height": 572,
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"movableRows": false,
+					"rowHeight": "96px",
+					"showHeaders": false,
+					"dataSource": "Form:C1466.movies",
+					"currentItemSource": "Form:C1466.movie",
+					"selectedItemsSource": "Form:C1466.selection",
+					"scrollbarHorizontal": "automatic",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "Spalte1",
+							"dataSource": "This:C1470.Cover",
+							"dataSourceTypeHint": "picture",
+							"width": 143,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"pictureFormat": "proportionalCenter",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Kopf1",
+								"text": "Kopf1"
+							},
+							"footer": {
+								"name": " 1",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "Spalte2",
+							"dataSource": "This:C1470.Titel_EN",
+							"width": 321,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Kopf2",
+								"text": "Kopf2"
+							},
+							"footer": {
+								"name": " 2",
+								"timeFormat": "hh_mm_ss"
+							}
+						}
+					]
+				},
+				"Viereck": {
+					"type": "rectangle",
+					"top": 108,
+					"left": 575,
+					"width": 273,
+					"height": 272,
+					"stroke": "#FFFFFF"
+				}
+			}
+		}
+	]
+}

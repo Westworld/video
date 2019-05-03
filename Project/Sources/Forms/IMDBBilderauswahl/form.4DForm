@@ -1,0 +1,126 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 15,
+	"bottomMargin": 15,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "DIN A4",
+		"paperWidth": "596pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text1": {
+					"type": "text",
+					"top": 10,
+					"left": 23,
+					"width": 218,
+					"height": 15,
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 12,
+					"text": "Zu ladendes Bild einmal anklicken"
+				},
+				"Button1": {
+					"type": "button",
+					"top": 566,
+					"left": 218,
+					"width": 91,
+					"height": 30,
+					"sizingY": "move",
+					"dataSource": "OK",
+					"action": "cancel",
+					"text": "Fertig",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 12,
+					"defaultButton": true,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"List Box1": {
+					"type": "listbox",
+					"top": 45,
+					"left": 23,
+					"width": 286,
+					"height": 508,
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"dataSource": "mylistbox",
+					"rowHeight": "100px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"headerHeight": "20px",
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"fontFamily": "System",
+					"fontSize": 12,
+					"columns": [
+						{
+							"name": "Column1",
+							"dataSource": "Bild_Image",
+							"dataSourceTypeHint": "picture",
+							"width": 340,
+							"minWidth": 10,
+							"maxWidth": 360,
+							"pictureFormat": "proportionalCenter",
+							"fill": "#FFFFFF",
+							"textAlign": "left",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onAlternateClick"
+							],
+							"method": "ObjectMethods/Column1.4dm",
+							"header": {
+								"name": "Header1",
+								"text": "Header1",
+								"dataSource": "Header1",
+								"textAlign": "center",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Fußteil1",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"fontFamily": "System",
+								"fontSize": 12
+							}
+						}
+					]
+				}
+			}
+		}
+	]
+}

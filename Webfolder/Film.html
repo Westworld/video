@@ -1,0 +1,86 @@
+<html>
+
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+		<meta name="generator" content="Adobe GoLive 5">
+		<title>Film</title>
+	</head>
+
+<style type="text/css">
+<!--
+	img {
+    vertical-align: middle;
+    height: 100%;
+}
+#scale-up {
+    height: 230px;
+}
+#scale-down {
+    height: 57px;
+}
+
+*.spalte { padding:10px; text-align:left; width:30%; float:left; }
+-->
+</style>
+
+	<body bgcolor="#ffffff">
+<p><a href="/Index.html">Home</a>
+<div>
+<BR/
+		<table border="0" cellpadding="0" cellspacing="2" width="100%">
+			<tr> <td width="75%">
+					<h1><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><!--4DVAR [Filme]DtTitel--></font></h1>
+				<td>
+				</td>
+			</tr>
+<tr>
+	<td width="75%"><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><!--4DVAR [Filme]Titel_EN--></font></td>
+	<td><font size="1" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><!--4DVAR [Filme]Land-->   <!--4DVAR [Filme]Jahr--> 
+		<!--4DIf ([Filme]Länge#0)-->  -  <!--4DVAR [Filme]Länge--> min<!--4DENDIF--><br><!--4DVAR [Filme]Genre1--> <!--4DVAR [Filme]Genre2-->
+		<BR> Deutsch: <!--4DVAR [Filme]Sprache_Deutsch-->, Englisch: <!--4DVAR [Filme]Sprache_Englisch--> - <!--4DVAR [Filme]Filmformat--> </font></td>
+			
+			</tr>
+		</table>
+<p></p>
+
+<!--#4DSCRIPT/Web_DisplayPoster-->
+<!--4DIf (WebDisplayPoster=0) -->
+<div class="spalte id="scale-up" style="height: 230px">
+<a href="/4DAction/WebFilmPict/<!--4DVAR [Filme]FID-->.jpg"> <img src="/4DAction/WebFilmPict/<!--4DVAR [Filme]FID-->.jpg" border="0"></a>
+</div>
+<!--4DENDIF-->
+<!--4DLoop [Bilder]-->
+<div class="spalte id="scale-up" style="height: 230px">
+		<a href="/4DAction/WebFilmbildVoll/<!--4DVAR [Filme]FID-->_<!--4DVAR [Bilder]SubID-->.jpg"> <img src="/4DAction/WebFilmbildVoll/<!--4DVAR [Filme]FID-->_<!--4DVAR [Bilder]SubID-->.jpg" border="0"> </a>
+</div>
+<!--4DEndLoop-->
+
+<div style="clear:both"></div>
+
+		<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><!--4DVAR [Filme]Inhalt--></font></p>
+		<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" size="2"><!--4DVAR [Filme]Bemerkung--></font></p>
+
+		<p><font size="2" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">
+
+</div>
+	
+<table border="0" cellpadding="0" cellspacing="1" width="100%">
+<!--4DLoop arrSchauPID-->
+<tr >
+
+ <td width="80" height="80">
+<a href="/4DAction/WebSchauPict/<!--4DVAR arrSchauPID{arrSchauPID}-->.jpg"> <img src="/4DAction/WebSchauPict/<!--4DVAR arrSchauPID{arrSchauPID}-->.jpg" border="0" ></a>
+ </td>
+  <td>
+<!--4DIF (arrSchauKenn{arrSchauPID}="@R@")--> Regie: <!--4DENDIF--> <a href="/4DAction/WebZeigeSchau/<!--4DVAR arrSchauPID{arrSchauPID}-->.html">
+	<!--4DVAR arrSchauName{arrSchauPID}--> </a><br>
+<!--4DIF (arrSchauRolle{arrSchauPID}#"")--> 
+als <!--4DVAR arrSchauRolle{arrSchauPID}--><!--4DENDIF-->
+ </td>
+
+</tr>
+<!--4DEndLoop-->
+</table>
+</font></p>
+	</body>
+</html>

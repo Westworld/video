@@ -1,0 +1,369 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 15,
+	"bottomMargin": 0,
+	"markerBody": 776,
+	"markerBreak": 776,
+	"markerFooter": 786,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "DIN A4",
+		"paperWidth": "596pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text5": {
+					"type": "text",
+					"top": 10,
+					"left": 103,
+					"width": 435,
+					"height": 16,
+					"sizingX": "grow",
+					"stroke": "#000000",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"text": "Originaltitel"
+				},
+				"vRecNum": {
+					"type": "input",
+					"top": 12,
+					"left": 554,
+					"width": 100,
+					"height": 13,
+					"dataSource": "vRecNum",
+					"stroke": "#000000",
+					"fontTheme": "additional",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Record Number"
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/vRecNum.4dm",
+					"events": [
+						"onLoad",
+						"onHeader",
+						"onPrintingBreak"
+					]
+				},
+				"Line6": {
+					"type": "line",
+					"top": 0,
+					"left": 88,
+					"height": 776,
+					"sizingY": "grow"
+				},
+				"bFirst": {
+					"type": "pictureButton",
+					"top": 10,
+					"left": 20,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bFirst",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/First Record"
+					},
+					"action": "firstRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/XP - First Record.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"dropping": "none",
+					"events": [
+						"onClick"
+					]
+				},
+				"bPrevious": {
+					"type": "pictureButton",
+					"top": 65,
+					"left": 20,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bPrevious",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Previous Record"
+					},
+					"action": "previousRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/XP - Previous Record.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"dropping": "none",
+					"events": [
+						"onClick"
+					]
+				},
+				"bNext": {
+					"type": "pictureButton",
+					"top": 120,
+					"left": 20,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bNext",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Next Record"
+					},
+					"action": "nextRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/XP - Next Record.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"dropping": "none",
+					"events": [
+						"onClick"
+					]
+				},
+				"bLast": {
+					"type": "pictureButton",
+					"top": 175,
+					"left": 20,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bLast",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Last Record"
+					},
+					"action": "lastRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/XP - Last Record.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"dropping": "none",
+					"events": [
+						"onClick"
+					]
+				},
+				"bDelete": {
+					"type": "pictureButton",
+					"top": 230,
+					"left": 20,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bDelete",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Delete Record"
+					},
+					"action": "deleteRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/XP - Delete Record.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"dropping": "none",
+					"events": [
+						"onClick"
+					]
+				},
+				"bCancel": {
+					"type": "pictureButton",
+					"top": 285,
+					"left": 20,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bCancel",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Cancel"
+					},
+					"action": "cancel",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/XP - Cancel.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"dropping": "none",
+					"events": [
+						"onClick"
+					]
+				},
+				"bValidate": {
+					"type": "pictureButton",
+					"top": 340,
+					"left": 20,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bValidate",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/OK"
+					},
+					"action": "accept",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/XP - OK.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"dropping": "none",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text7": {
+					"type": "text",
+					"top": 45,
+					"left": 115,
+					"width": 53,
+					"height": 16,
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"text": "Titel : "
+				},
+				"Text8": {
+					"type": "text",
+					"top": 70,
+					"left": 115,
+					"width": 53,
+					"height": 16,
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"text": "Dt Titel : "
+				},
+				"Titel": {
+					"type": "input",
+					"top": 45,
+					"left": 173,
+					"width": 350,
+					"height": 15,
+					"dataSource": "[Filme:1]EnTitel:2",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Dt Titel": {
+					"type": "input",
+					"top": 70,
+					"left": 173,
+					"width": 350,
+					"height": 15,
+					"dataSource": "[Filme:1]DtTitel:9",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Subform": {
+					"type": "subform",
+					"top": 97,
+					"left": 145,
+					"width": 491,
+					"height": 642,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSourceTypeHint": "text",
+					"table": 3,
+					"detailForm": "Liste",
+					"listForm": "Liste",
+					"scrollbarHorizontal": "visible",
+					"scrollbarVertical": "visible",
+					"enterableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"selectionMode": "single",
+					"printFrame": "variable",
+					"borderStyle": "sunken"
+				},
+				"bAddSub": {
+					"type": "button",
+					"top": 97,
+					"left": 119,
+					"width": 20,
+					"height": 20,
+					"dataSource": "bAddSub",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Add Subrecord"
+					},
+					"action": "addSubrecord",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 12,
+					"icon": "/RESOURCES/Images/library/XP - Add Subrecord.png",
+					"iconFrames": 4,
+					"style": "bevel",
+					"events": [
+						"onClick"
+					]
+				},
+				"bDeleteSub": {
+					"type": "button",
+					"top": 124,
+					"left": 119,
+					"width": 20,
+					"height": 20,
+					"dataSource": "bDeleteSub",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Delete Subrecor"
+					},
+					"action": "deleteSubrecord",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 12,
+					"icon": "/RESOURCES/Images/library/XP - Delete Subrecord.png",
+					"iconFrames": 4,
+					"style": "bevel",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

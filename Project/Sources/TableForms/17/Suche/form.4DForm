@@ -1,0 +1,223 @@
+﻿{
+	"destination": "listScreen",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerBody": 286,
+	"markerBreak": 286,
+	"markerFooter": 286,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"pageFormat": {
+		"paperName": "DIN A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Rectangle rond1": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 510,
+					"height": 284,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"fill": "#000000"
+				},
+				"Bild2": {
+					"type": "picture",
+					"top": 2,
+					"left": 0,
+					"width": 223,
+					"height": 282,
+					"pictureFormat": "scaled",
+					"picture": "Images/Bild2.png"
+				},
+				"Bild3": {
+					"type": "picture",
+					"top": 197,
+					"left": 306,
+					"width": 180,
+					"height": 87,
+					"pictureFormat": "scaled",
+					"picture": "Images/Bild3.png"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text7": {
+					"type": "text",
+					"top": 10,
+					"left": 103,
+					"width": 367,
+					"height": 25,
+					"sizingX": "grow",
+					"stroke": "#000000",
+					"fontSize": 18,
+					"text": "Mitwirkende"
+				},
+				"Text10": {
+					"type": "text",
+					"top": 45,
+					"left": 115,
+					"width": 72,
+					"height": 15,
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"text": "Suchname : "
+				},
+				"Text11": {
+					"type": "text",
+					"top": 69,
+					"left": 115,
+					"width": 72,
+					"height": 15,
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"text": "Rolle : "
+				},
+				"Text12": {
+					"type": "text",
+					"top": 93,
+					"left": 115,
+					"width": 72,
+					"height": 15,
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"text": "Kennung : "
+				},
+				"bCancel1": {
+					"type": "pictureButton",
+					"top": 234,
+					"left": 423,
+					"width": 35,
+					"height": 36,
+					"sizingY": "move",
+					"dataSource": "bValidate2",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/OK"
+					},
+					"action": "accept",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/black.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bValidate1": {
+					"type": "pictureButton",
+					"top": 234,
+					"left": 377,
+					"width": 35,
+					"height": 36,
+					"sizingY": "move",
+					"dataSource": "bCancel2",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Cancel"
+					},
+					"action": "cancel",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/black.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 31,
+					"left": 241,
+					"width": 245,
+					"height": 38,
+					"dataSource": "<>Actor",
+					"fontSize": 18,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text": {
+					"type": "text",
+					"top": 106,
+					"left": 288,
+					"width": 19,
+					"height": 17,
+					"text": "x"
+				},
+				"Bild4": {
+					"type": "picture",
+					"top": 245,
+					"left": 435,
+					"width": 14,
+					"height": 14,
+					"pictureFormat": "scaled",
+					"picture": "Images/Bild4.png"
+				},
+				"Bild5": {
+					"type": "picture",
+					"top": 244,
+					"left": 386,
+					"width": 17,
+					"height": 15,
+					"pictureFormat": "scaled",
+					"picture": "Images/Bild5.png"
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,294 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "DIN A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"List Box": {
+					"type": "listbox",
+					"top": 18,
+					"left": 11,
+					"width": 935,
+					"height": 292,
+					"resizingMode": "legacy",
+					"dataSource": "ListBox1",
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "Spalte1",
+							"dataSource": "kodi_imdb",
+							"width": 81,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Kopf1",
+								"text": "imdb",
+								"dataSource": "Kopf1"
+							},
+							"footer": {
+								"name": "Fußteil1",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "Spalte2",
+							"dataSource": "kodi_year",
+							"width": 66,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Kopf2",
+								"text": "year",
+								"dataSource": "Kopf2"
+							},
+							"footer": {
+								"name": "Fußteil2",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "Spalte3",
+							"dataSource": "kodi_detitle",
+							"width": 310,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Kopf3",
+								"text": "detitel",
+								"dataSource": "Kopf3"
+							},
+							"footer": {
+								"name": "Fußteil3",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "Spalte4",
+							"dataSource": "kodi_entitle",
+							"width": 329,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Kopf4",
+								"text": "entitel",
+								"dataSource": "Kopf4"
+							},
+							"footer": {
+								"name": "Fußteil4",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "Spalte8",
+							"dataSource": "kodi_id",
+							"width": 134,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"visibility": "hidden",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Kopf8",
+								"text": "id",
+								"dataSource": "Kopf8"
+							},
+							"footer": {
+								"name": "Fußteil8",
+								"timeFormat": "hh_mm_ss"
+							}
+						}
+					]
+				},
+				"List Box1": {
+					"type": "listbox",
+					"top": 361,
+					"left": 11,
+					"width": 935,
+					"height": 267,
+					"resizingMode": "legacy",
+					"dataSource": "ListBox2",
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "Spalte6",
+							"dataSource": "db_detitle",
+							"width": 431,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Kopf6",
+								"text": "Titel",
+								"dataSource": "Kopf6"
+							},
+							"footer": {
+								"name": "Fußteil6",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "Spalte7",
+							"dataSource": "db_entitle",
+							"width": 343,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Kopf7",
+								"text": "English",
+								"dataSource": "Kopf7"
+							},
+							"footer": {
+								"name": "Fußteil7",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "Spalte9",
+							"dataSource": "db_FID",
+							"width": 146,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Kopf9",
+								"text": "FID",
+								"dataSource": "Kopf9"
+							},
+							"footer": {
+								"name": "Fußteil9",
+								"timeFormat": "hh_mm_ss"
+							}
+						}
+					]
+				},
+				"tQuery": {
+					"type": "input",
+					"top": 330,
+					"left": 19,
+					"width": 240,
+					"height": 17,
+					"fill": "transparent",
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"placeholder": "Suche",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/tQuery.4dm",
+					"events": [
+						"onAfterKeystroke"
+					]
+				},
+				"Schaltfläche": {
+					"type": "button",
+					"top": 330,
+					"left": 279,
+					"width": 140,
+					"height": 17,
+					"text": "Ausgewählt Zuweisen",
+					"method": "ObjectMethods/Schaltfläche.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Schaltfläche1": {
+					"type": "button",
+					"top": 330,
+					"left": 447,
+					"width": 106,
+					"height": 17,
+					"dataSource": "Schaltfläche1",
+					"text": "Anlegen",
+					"method": "ObjectMethods/Schaltfläche1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Schaltfläche2": {
+					"type": "button",
+					"top": 330,
+					"left": 566,
+					"width": 106,
+					"height": 17,
+					"text": "Alle Anlegen",
+					"method": "ObjectMethods/Schaltfläche2.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

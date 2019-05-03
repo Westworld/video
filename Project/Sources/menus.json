@@ -1,0 +1,198 @@
+﻿{
+	"bars": [
+		{
+			"id": 1,
+			"name": "Menu Bar #1",
+			"items": [
+				{
+					"link": 15089
+				},
+				{
+					"link": 32001
+				},
+				{
+					"link": 21287
+				}
+			]
+		},
+		{
+			"id": 2,
+			"name": "Menu Bar #2",
+			"items": [
+				{
+					"link": 15090
+				}
+			]
+		},
+		{
+			"id": 3,
+			"name": "Editmodus",
+			"items": [
+				{
+					"link": 15089
+				},
+				{
+					"link": 32001
+				},
+				{
+					"link": 32002
+				}
+			]
+		},
+		{
+			"id": 4,
+			"name": "Edit_Orda",
+			"items": [
+				{
+					"link": 15089
+				},
+				{
+					"link": 32001
+				},
+				{
+					"link": 32004
+				}
+			]
+		}
+	],
+	"menus": [
+		{
+			"link": 15089,
+			"title": ":79,1",
+			"items": [
+				{
+					"title": "Kodi Update Stream Details",
+					"method": "KodiUpdateStreamDetails",
+					"startNewProcess": true
+				},
+				{
+					"title": "Kodi Hole neue Filme",
+					"method": "KodiGetAllVideos",
+					"startNewProcess": true
+				},
+				{
+					"title": "Beenden",
+					"method": "MBeenden",
+					"shortcutAccel": true,
+					"shortcutKey": "Q",
+					"action": "quit"
+				}
+			]
+		},
+		{
+			"link": 21287,
+			"title": "Ändern",
+			"items": [
+				{
+					"title": "Filme",
+					"method": "FilmListe",
+					"shortcutAccel": true,
+					"shortcutKey": "F",
+					"startNewProcess": true
+				},
+				{
+					"title": "Personen",
+					"method": "PersonListe",
+					"shortcutAccel": true,
+					"shortcutKey": "P",
+					"startNewProcess": true
+				}
+			]
+		},
+		{
+			"link": 15090,
+			"title": "Fenster",
+			"items": [
+				{
+					"title": "Schauspieler",
+					"method": "M_Spieler"
+				}
+			]
+		},
+		{
+			"link": 32001,
+			"title": ":xliff:CommonMenuEdit",
+			"items": [
+				{
+					"title": ":xliff:CommonMenuItemUndo",
+					"shortcutAccel": true,
+					"shortcutKey": "Z",
+					"action": "undo"
+				},
+				{
+					"title": "(-",
+					"isSeparator": true,
+					"enabled": false
+				},
+				{
+					"title": ":xliff:CommonMenuItemCut",
+					"shortcutAccel": true,
+					"shortcutKey": "X",
+					"action": "cut"
+				},
+				{
+					"title": ":xliff:CommonMenuItemCopy",
+					"shortcutAccel": true,
+					"shortcutKey": "C",
+					"action": "copy"
+				},
+				{
+					"title": ":xliff:CommonMenuItemPaste",
+					"shortcutAccel": true,
+					"shortcutKey": "V",
+					"action": "paste"
+				},
+				{
+					"title": ":xliff:CommonMenuItemClear",
+					"action": "clear"
+				},
+				{
+					"title": ":xliff:CommonMenuItemSelectAll",
+					"shortcutAccel": true,
+					"shortcutKey": "A",
+					"action": "selectAll"
+				},
+				{
+					"title": "(-",
+					"isSeparator": true,
+					"enabled": false
+				},
+				{
+					"title": ":xliff:CommonMenuItemShowClipboard",
+					"action": "showClipboard"
+				}
+			]
+		},
+		{
+			"link": 32002,
+			"title": "Film",
+			"items": [
+				{
+					"title": "Sichern",
+					"action": "accept"
+				}
+			]
+		},
+		{
+			"link": 32000,
+			"title": "Admin",
+			"items": [
+				{
+					"title": "Filme von Kodi",
+					"method": "KodiGetAllVideos",
+					"startNewProcess": true
+				}
+			]
+		},
+		{
+			"link": 32004,
+			"title": "Film",
+			"items": [
+				{
+					"title": "Sichern",
+					"method": "FilmOrdaSichern"
+				}
+			]
+		}
+	]
+}

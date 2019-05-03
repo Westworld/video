@@ -1,0 +1,44 @@
+<html>
+
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+		<meta name="generator" content="Adobe GoLive 5">
+		<title>Schauspieler</title>
+	</head>
+	
+	<style type="text/css">
+<!--
+	img {
+    vertical-align: middle;
+    height: 100%;
+}
+#scale-up {
+    height: 230px;
+}
+#scale-down {
+    height: 57px;
+}
+
+*.spalte { padding:10px; text-align:left; width:30%; float:left; }
+-->
+</style>
+
+	<body bgcolor="#ffffff">
+		<p>
+		<h1><!--4DVAR [Personen]Suchname--></h1>
+		<p>
+<div class="spalte id="scale-up" style="height: 230px">
+<a href="/4DAction/WebSchauPict/<!--4DVAR [Personen]PID-->.jpg"> <img src="/4DAction/WebSchauPict/<!--4DVAR [Personen]PID-->.jpg" border="0"></a>
+</div>		
+		
+<!--4DLoop WebLoopSchauFilme-->
+<!--4DIF ([Filme]FID#0)--> 
+		<!--4DIF ([Mitwirkende]Kennung="@R@")--> Regie: <!--4DENDIF-->
+<a href="/4DAction/WebZeigeFilm/<!--4DVAR [Mitwirkende]FID-->.html"><!--4DVAR [Filme]DtTitel--> </a>
+<!--4DIF ([Mitwirkende]Rolle#"")--> als <!--4DVAR [Mitwirkende]Rolle--><!--4DENDIF-->, <!--4DVAR [Filme]Jahr-->
+<BR>
+<!--4DENDIF-->
+<!--4DEndLoop--></p>
+	</body>
+
+</html>

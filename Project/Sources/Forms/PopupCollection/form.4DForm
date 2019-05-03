@@ -1,0 +1,109 @@
+﻿{
+	"destination": "detailScreen",
+	"formSizeAnchor": "Viereck",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "DIN A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Viereck": {
+					"type": "rectangle",
+					"top": 1,
+					"left": 1,
+					"width": 221,
+					"height": 275,
+					"fill": "#000000"
+				},
+				"LBPopup": {
+					"type": "listbox",
+					"top": 1,
+					"left": 1,
+					"width": 222,
+					"height": 277,
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"focusable": false,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"showHeaders": false,
+					"dataSource": "Form:C1466.list",
+					"selectedItemsSource": "Form:C1466.result",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"method": "ObjectMethods/LBPopup.4dm",
+					"events": [
+						"onSelectionChange"
+					],
+					"columns": [
+						{
+							"name": "arr1",
+							"dataSource": "This:C1470.value",
+							"width": 207,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#806000",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Kopf1",
+								"text": "Kopf1",
+								"dataSource": "Kopf1"
+							},
+							"footer": {
+								"name": "Fußteil1",
+								"timeFormat": "hh_mm_ss"
+							}
+						}
+					]
+				},
+				"Schaltfläche": {
+					"type": "button",
+					"top": 299,
+					"left": 118,
+					"width": 56,
+					"height": 28,
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Button",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

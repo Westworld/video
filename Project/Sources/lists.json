@@ -1,0 +1,433 @@
+﻿{
+	"Merkmal": {
+		"lineHeight": 18,
+		"editable": true,
+		"items": [
+			{
+				"text": "Merkliste Astrid",
+				"ref": 1,
+				"editable": true
+			},
+			{
+				"text": "Merkliste Thomas",
+				"ref": 2,
+				"editable": true
+			},
+			{
+				"text": "-",
+				"ref": 3,
+				"editable": true
+			},
+			{
+				"text": "Astrid *",
+				"ref": 4,
+				"editable": true
+			},
+			{
+				"text": "Astrid **",
+				"ref": 5,
+				"editable": true
+			},
+			{
+				"text": "Astrid ***",
+				"ref": 6,
+				"editable": true
+			},
+			{
+				"text": "Astrid ****",
+				"ref": 7,
+				"editable": true
+			},
+			{
+				"text": "Astrid *****",
+				"ref": 8,
+				"editable": true
+			},
+			{
+				"text": "-",
+				"ref": 9,
+				"editable": true
+			},
+			{
+				"text": "Thomas *",
+				"ref": 10,
+				"editable": true
+			},
+			{
+				"text": "Thomas **",
+				"ref": 11,
+				"editable": true
+			},
+			{
+				"text": "Thomas ***",
+				"ref": 12,
+				"editable": true
+			},
+			{
+				"text": "Thomas ****",
+				"ref": 13,
+				"editable": true
+			},
+			{
+				"text": "Thomas *****",
+				"ref": 14,
+				"editable": true
+			}
+		]
+	},
+	"Ton": {
+		"lineHeight": 18,
+		"editable": false,
+		"items": [
+			{
+				"text": "DD 5.1",
+				"ref": 1,
+				"editable": true
+			},
+			{
+				"text": "DD 2.0",
+				"ref": 2,
+				"editable": true
+			},
+			{
+				"text": "DD 6.1 EX",
+				"ref": 3,
+				"editable": true
+			},
+			{
+				"text": "DTS",
+				"ref": 4,
+				"editable": true
+			},
+			{
+				"text": "DTS EX",
+				"ref": 5,
+				"editable": true
+			},
+			{
+				"text": "Pro Logic",
+				"ref": 6,
+				"editable": true
+			},
+			{
+				"text": "Mono",
+				"ref": 7,
+				"editable": true
+			},
+			{
+				"text": "Unbekannt",
+				"ref": 8,
+				"editable": true
+			},
+			{
+				"text": "-",
+				"ref": 9,
+				"editable": true
+			}
+		]
+	},
+	"Bandart": {
+		"lineHeight": 18,
+		"editable": true,
+		"items": [
+			{
+				"text": "VHS",
+				"ref": 1,
+				"editable": true
+			},
+			{
+				"text": "SHVS",
+				"ref": 2,
+				"editable": true
+			},
+			{
+				"text": "DVD",
+				"ref": 3,
+				"editable": true
+			},
+			{
+				"text": "DVD-D",
+				"ref": 4,
+				"editable": true
+			},
+			{
+				"text": "DVD-TV",
+				"ref": 5,
+				"editable": true
+			},
+			{
+				"text": "BluRay",
+				"ref": 6,
+				"editable": true
+			},
+			{
+				"text": "BluRay-TV",
+				"ref": 7,
+				"editable": true
+			}
+		]
+	},
+	"Füllwörter": {
+		"lineHeight": 18,
+		"editable": true,
+		"items": [
+			{
+				"text": "mit",
+				"ref": 1,
+				"editable": true
+			},
+			{
+				"text": "der",
+				"ref": 2,
+				"editable": true
+			},
+			{
+				"text": "die",
+				"ref": 3,
+				"editable": true
+			},
+			{
+				"text": "das",
+				"ref": 4,
+				"editable": true
+			},
+			{
+				"text": "und",
+				"ref": 5,
+				"editable": true
+			},
+			{
+				"text": "oder",
+				"ref": 6,
+				"editable": true
+			},
+			{
+				"text": "ein",
+				"ref": 7,
+				"editable": true
+			},
+			{
+				"text": "eine",
+				"ref": 8,
+				"editable": true
+			},
+			{
+				"text": "eines",
+				"ref": 9,
+				"editable": true
+			},
+			{
+				"text": "in",
+				"ref": 10,
+				"editable": true
+			},
+			{
+				"text": "an",
+				"ref": 11,
+				"editable": true
+			},
+			{
+				"text": "oder",
+				"ref": 12,
+				"editable": true
+			},
+			{
+				"text": "unter",
+				"ref": 13,
+				"editable": true
+			},
+			{
+				"text": "über",
+				"ref": 14,
+				"editable": true
+			},
+			{
+				"text": "the",
+				"ref": 15,
+				"editable": true
+			},
+			{
+				"text": "at",
+				"ref": 16,
+				"editable": true
+			},
+			{
+				"text": "des",
+				"ref": 17,
+				"editable": true
+			},
+			{
+				"text": "to",
+				"ref": 18,
+				"editable": true
+			},
+			{
+				"text": "es",
+				"ref": 19,
+				"editable": true
+			},
+			{
+				"text": "mit",
+				"ref": 20,
+				"editable": true
+			}
+		]
+	},
+	"Genre": {
+		"lineHeight": 18,
+		"editable": true,
+		"items": [
+			{
+				"text": "Abenteuer",
+				"ref": 1,
+				"editable": true
+			},
+			{
+				"text": "Action",
+				"ref": 2,
+				"editable": true
+			},
+			{
+				"text": "Animation",
+				"ref": 3,
+				"editable": true
+			},
+			{
+				"text": "Anti-Kriegsfilm",
+				"ref": 4,
+				"editable": true
+			},
+			{
+				"text": "Biografie",
+				"ref": 5,
+				"editable": true
+			},
+			{
+				"text": "Dokumentation",
+				"ref": 6,
+				"editable": true
+			},
+			{
+				"text": "Drama",
+				"ref": 7,
+				"editable": true
+			},
+			{
+				"text": "Erotik",
+				"ref": 8,
+				"editable": true
+			},
+			{
+				"text": "Fantasy",
+				"ref": 9,
+				"editable": true
+			},
+			{
+				"text": "Historienfilm",
+				"ref": 10,
+				"editable": true
+			},
+			{
+				"text": "Horror",
+				"ref": 11,
+				"editable": true
+			},
+			{
+				"text": "Kabarett",
+				"ref": 12,
+				"editable": true
+			},
+			{
+				"text": "Katastrophen",
+				"ref": 13,
+				"editable": true
+			},
+			{
+				"text": "Kinder-/Familienfilm",
+				"ref": 14,
+				"editable": true
+			},
+			{
+				"text": "Komödie",
+				"ref": 15,
+				"editable": true
+			},
+			{
+				"text": "Kriegsfilm",
+				"ref": 16,
+				"editable": true
+			},
+			{
+				"text": "Krimi",
+				"ref": 17,
+				"editable": true
+			},
+			{
+				"text": "Liebe/Romantik",
+				"ref": 18,
+				"editable": true
+			},
+			{
+				"text": "Musical",
+				"ref": 19,
+				"editable": true
+			},
+			{
+				"text": "Musikfilm",
+				"ref": 20,
+				"editable": true
+			},
+			{
+				"text": "Mystery",
+				"ref": 21,
+				"editable": true
+			},
+			{
+				"text": "Science-Fiction",
+				"ref": 22,
+				"editable": true
+			},
+			{
+				"text": "Thriller",
+				"ref": 23,
+				"editable": true
+			},
+			{
+				"text": "Western",
+				"ref": 24,
+				"editable": true
+			},
+			{
+				"text": "Zeichentrick",
+				"ref": 25,
+				"editable": true
+			}
+		]
+	},
+	"Bild": {
+		"lineHeight": 18,
+		"editable": false,
+		"items": [
+			{
+				"text": "2.35",
+				"ref": 1,
+				"editable": true
+			},
+			{
+				"text": "1.85",
+				"ref": 2,
+				"editable": true
+			},
+			{
+				"text": "4:3",
+				"ref": 3,
+				"editable": true
+			},
+			{
+				"text": "4:3 - Streifen",
+				"ref": 4,
+				"editable": true
+			}
+		]
+	}
+}

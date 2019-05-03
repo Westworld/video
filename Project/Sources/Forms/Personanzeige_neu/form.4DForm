@@ -1,0 +1,144 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onOutsideCall",
+		"onResize"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "DIN A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Viereck": {
+					"type": "rectangle",
+					"top": -1,
+					"left": -1,
+					"width": 697,
+					"height": 552,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"fill": "#000000"
+				}
+			}
+		},
+		{
+			"objects": {
+				"tQuery": {
+					"type": "input",
+					"top": 19,
+					"left": 20,
+					"width": 240,
+					"height": 17,
+					"stroke": "#FFFFFF",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"placeholder": "Suche",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/tQuery.4dm",
+					"events": [
+						"onAfterKeystroke"
+					]
+				},
+				"Actoranzeige": {
+					"type": "listbox",
+					"top": 51,
+					"left": 8,
+					"width": 688,
+					"height": 500,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"focusable": false,
+					"hideFocusRing": true,
+					"movableRows": false,
+					"hideSystemHighlight": true,
+					"rowHeight": "80px",
+					"showHeaders": false,
+					"dataSource": "Form:C1466.Grid",
+					"currentItemSource": "Form:C1466.Element",
+					"currentItemPositionSource": "Form:C1466.Position",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"method": "ObjectMethods/Actoranzeige.4dm",
+					"events": [
+						"onDoubleClick"
+					],
+					"columns": []
+				}
+			}
+		},
+		{
+			"objects": {
+				"Feld2": {
+					"type": "input",
+					"top": 0,
+					"left": 1,
+					"width": 695,
+					"height": 551,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "[Filme:1]Fanart:26",
+					"dragging": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Feld": {
+					"type": "input",
+					"top": 50,
+					"left": 33,
+					"width": 292,
+					"height": 321,
+					"dataSource": "[Filme:1]",
+					"dragging": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Feld1": {
+					"type": "input",
+					"top": 392,
+					"left": 34,
+					"width": 621,
+					"height": 17,
+					"dataSource": "[Filme:1]DtTitel:9",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Schaltfläche": {
+					"type": "button",
+					"top": 513,
+					"left": 32,
+					"width": 107,
+					"height": 22,
+					"action": "previousPage",
+					"text": "Back",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

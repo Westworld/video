@@ -1,0 +1,102 @@
+﻿{
+	"Default Folder": {
+		"groups": [
+			"Default Tables",
+			"Default Project Methods",
+			"Default Forms"
+		]
+	},
+	"Default Tables": {
+		"tables": [
+			"Filme",
+			"Mitwirkende",
+			"Parameter",
+			"Bilder",
+			"HTTP_query"
+		]
+	},
+	"Default Project Methods": {
+		"methods": [
+			"Titeltext",
+			"xxxxxDoClose",
+			"Zeittext",
+			"WriteErrorHandler",
+			"Movie_Internet_OFDB_ID_sub",
+			"Thread_Internet_imdb_Bilder",
+			"WebZeigeKat",
+			"WebFilmPict",
+			"WebFilmbildklein",
+			"Web_CheckPersonen",
+			"HTTP_Parse",
+			"CreatePersonen",
+			"Movie_Internet_imdb_Daten",
+			"Movie_Internet_imdb_Bilder",
+			"EntferneBlank",
+			"Movie_Internet_OFDB_Daten_Sub",
+			"WebZeigealpha",
+			"MBeenden",
+			"g_RemoveBlanks",
+			"WebLoopSchauspieler",
+			"On Windows",
+			"Movie_Internet_OFDB_ID",
+			"WebZeigeFilm",
+			"WebDoRelationSchau",
+			"test",
+			"xxxxDoCancel",
+			"WebZeigeSchauListe",
+			"ModOrig",
+			"ytest",
+			"xxxxxDerDieDasConver",
+			"WebLoopSchauFilme",
+			"READpictforCD",
+			"Movie_Internet_imdb_ID",
+			"EntferneKlammerGruppe",
+			"yycheckPersonen",
+			"Movie_Internet_imdb_Amazon_ID",
+			"Movie_Internet_OFDB_Daten",
+			"HTML2Mac",
+			"Eingabekontrolle_Original",
+			"Thread_Internet_IMDB_OFDB",
+			"WebKat",
+			"WebDoRelationVideo",
+			"WebErzeugeAlphabet",
+			"WebFilmBildVoll",
+			"CloseWindow",
+			"WebZeigeSchau",
+			"Movie_Internet_Download_Picture",
+			"ModPer",
+			"WebErzeugeSchauAlphabet"
+		]
+	},
+	"HTMLExport": {
+		"methods": [
+			"WebKat_Sub",
+			"HTML_StartExport",
+			"HTML_StartExport_Kat"
+		]
+	},
+	"Default Forms": {
+		"forms": [
+			"[Personen]Incl. Liste",
+			"[Mitwirkende]Incl. Liste",
+			"[Mitwirkende]Incl. Mitwirkende_Titel",
+			"[Mitwirkende]Incl. Personen",
+			"[Personen]SpielerAuswahl",
+			"[Mitwirkende]Incl. Offen",
+			"[Mitwirkende]Incl Mitwirkende Name",
+			"[HTTP_query]Eingabe",
+			"[Mitwirkende]Incl. personen ",
+			"[Bilder]Bilddarstellung",
+			"[Mitwirkende]Liste",
+			"IMDBBilderauswahl",
+			"[Bilder]Input",
+			"[Parameter]Layout1",
+			"[Bilder]subform",
+			"[Mitwirkende]Leer_Dummy",
+			"[Personen]Suche",
+			"[Personen]Liste",
+			"[HTTP_query]Ausgabe"
+		]
+	},
+	"trash": {}
+}

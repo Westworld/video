@@ -1,0 +1,609 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"menuBar": "Edit_Orda",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onResize",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "DIN A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Viereck": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 695,
+					"height": 553,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"fill": "#000000"
+				},
+				"fanart": {
+					"type": "input",
+					"top": -2,
+					"left": 0,
+					"width": 695,
+					"height": 556,
+					"visibility": "hidden",
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSourceTypeHint": "picture",
+					"fill": "transparent",
+					"pictureFormat": "scaled",
+					"dragging": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Feld": {
+					"type": "input",
+					"top": 11,
+					"left": 509,
+					"width": 179,
+					"height": 181,
+					"sizingX": "move",
+					"dataSource": "Form:C1466.Movie.Bild",
+					"dataSourceTypeHint": "picture",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"pictureFormat": "proportionalCenter",
+					"dragging": "custom",
+					"method": "ObjectMethods/Feld.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"Feld1": {
+					"type": "input",
+					"top": 30,
+					"left": 8,
+					"width": 496,
+					"height": 28,
+					"dataSource": "Form:C1466.Movie.DtTitel",
+					"stroke": "#FDCC09",
+					"fontFamily": ".Helvetica Neue DeskInterface Regular",
+					"fontSize": 18,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Feld2": {
+					"type": "input",
+					"top": 54,
+					"left": 8,
+					"width": 496,
+					"height": 20,
+					"dataSource": "Form:C1466.Movie.EnTitel",
+					"stroke": "#FDCC09",
+					"fontFamily": ".Helvetica Neue DeskInterface Regular",
+					"fontSize": 14,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Feld3": {
+					"type": "input",
+					"top": 145,
+					"left": 8,
+					"width": 496,
+					"height": 174,
+					"sizingX": "grow",
+					"dataSource": "Form:C1466.Movie.Inhalt",
+					"stroke": "#EBFDF3",
+					"fontFamily": ".Helvetica Neue DeskInterface Regular",
+					"fontSize": 14,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable": {
+					"type": "input",
+					"top": 77,
+					"left": 8,
+					"width": 368,
+					"height": 17,
+					"dataSource": "Form:C1466.Movie.Land+\", \"+Form:C1466.Movie.Jahr+\" - \"+String:C10(Form:C1466.Movie.Länge)+\" min, \"+String:C10(Form:C1466.Movie.purchasedate)",
+					"stroke": "#FFFFFF",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Actoranzeige": {
+					"type": "listbox",
+					"top": 329,
+					"left": 8,
+					"width": 687,
+					"height": 224,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"focusable": false,
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "160px",
+					"showHeaders": false,
+					"dataSource": "Form:C1466.Grid",
+					"selectionMode": "none",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"stroke": "#85A2DF",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"method": "ObjectMethods/Actoranzeige.4dm",
+					"events": [
+						"onDoubleClick"
+					],
+					"columns": []
+				},
+				"Rating1": {
+					"type": "subform",
+					"top": 101,
+					"left": 8,
+					"width": 180,
+					"height": 19,
+					"dataSource": "Rating1",
+					"detailForm": "Ratings",
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"method": "ObjectMethods/Rating1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Rating2": {
+					"type": "subform",
+					"top": 101,
+					"left": 196,
+					"width": 180,
+					"height": 19,
+					"dataSource": "Rating2",
+					"detailForm": "Ratings",
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"method": "ObjectMethods/Rating2.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Feld18": {
+					"type": "input",
+					"top": 126,
+					"left": 8,
+					"width": 496,
+					"height": 13,
+					"sizingX": "grow",
+					"dataSource": "Form:C1466.Movie.streamdetails",
+					"stroke": "#EBFDF3",
+					"fontFamily": ".Helvetica Neue DeskInterface Regular",
+					"fontSize": 10,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Feld19": {
+					"type": "input",
+					"top": 212,
+					"left": 509,
+					"width": 176,
+					"height": 108,
+					"sizingX": "move",
+					"dataSource": "Form:C1466.Movie.Bilder[Form:C1466.BildIndex].dasbild",
+					"dataSourceTypeHint": "picture",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"pictureFormat": "proportionalCenter",
+					"dragging": "custom",
+					"method": "ObjectMethods/Feld19.4dm",
+					"events": [
+						"onClick",
+						"onDoubleClick"
+					]
+				},
+				"Ankreuzfeld": {
+					"type": "checkbox",
+					"top": 72,
+					"left": 438,
+					"width": 76,
+					"height": 17,
+					"dataSource": "Form:C1466.Movie.merklisteT",
+					"text": "Thomas",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"stroke": "#FFFFFF",
+					"method": "ObjectMethods/Ankreuzfeld.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Ankreuzfeld1": {
+					"type": "checkbox",
+					"top": 89,
+					"left": 438,
+					"width": 76,
+					"height": 17,
+					"dataSource": "Form:C1466.Movie.merklisteA",
+					"text": "Astrid",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"stroke": "#FFFFFF",
+					"method": "ObjectMethods/Ankreuzfeld1.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Feld8": {
+					"type": "input",
+					"top": 77,
+					"left": 342,
+					"width": 56,
+					"height": 13,
+					"dataSource": "Form:C1466.Movie.imdb",
+					"stroke": "#806000",
+					"fontFamily": ".Helvetica Neue DeskInterface Regular",
+					"fontSize": 10,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Feld9": {
+					"type": "input",
+					"top": 77,
+					"left": 450,
+					"width": 45,
+					"height": 14,
+					"dataSource": "Form:C1466.Movie.MovieDB",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#806000",
+					"fontFamily": ".Helvetica Neue DeskInterface Regular",
+					"fontSize": 10,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Feld5": {
+					"type": "input",
+					"top": 114,
+					"left": 8,
+					"width": 496,
+					"height": 20,
+					"sizingX": "grow",
+					"dataSource": "Form:C1466.Movie.MKV_Pfad",
+					"stroke": "#EBFDF3",
+					"fontFamily": ".Helvetica Neue DeskInterface Regular",
+					"fontSize": 14,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Schaltfläche": {
+					"type": "button",
+					"top": 13,
+					"left": 577,
+					"width": 97,
+					"height": 18,
+					"action": "previousPage",
+					"text": "Back",
+					"events": [
+						"onClick"
+					]
+				},
+				"Feld6": {
+					"type": "input",
+					"top": 141,
+					"left": 8,
+					"width": 496,
+					"height": 77,
+					"sizingX": "grow",
+					"dataSource": "Form:C1466.Movie.Bemerkung",
+					"stroke": "#EBFDF3",
+					"fontFamily": ".Helvetica Neue DeskInterface Regular",
+					"fontSize": 14,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Feld7": {
+					"type": "input",
+					"top": 114,
+					"left": 524,
+					"width": 168,
+					"height": 20,
+					"sizingX": "grow",
+					"dataSource": "Form:C1466.Movie.Bandart",
+					"stroke": "#EBFDF3",
+					"fontFamily": ".Helvetica Neue DeskInterface Regular",
+					"fontSize": 14,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Feld11": {
+					"type": "input",
+					"top": 213,
+					"left": 8,
+					"width": 496,
+					"height": 137,
+					"sizingX": "grow",
+					"dataSource": "Form:C1466.Movie.streamdetails",
+					"stroke": "#EBFDF3",
+					"fontFamily": ".Helvetica Neue DeskInterface Regular",
+					"fontSize": 14,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Feld12": {
+					"type": "input",
+					"top": 363,
+					"left": 8,
+					"width": 496,
+					"height": 77,
+					"sizingX": "grow",
+					"dataSource": "Form:C1466.Movie.Crew",
+					"dataSourceTypeHint": "object",
+					"stroke": "#EBFDF3",
+					"fontFamily": ".Helvetica Neue DeskInterface Regular",
+					"fontSize": 14,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Feld13": {
+					"type": "input",
+					"top": 452,
+					"left": 8,
+					"width": 250,
+					"height": 20,
+					"sizingX": "grow",
+					"dataSource": "Form:C1466.Movie.Sprache_Deutsch",
+					"stroke": "#EBFDF3",
+					"fontFamily": ".Helvetica Neue DeskInterface Regular",
+					"fontSize": 14,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Feld14": {
+					"type": "input",
+					"top": 452,
+					"left": 278,
+					"width": 250,
+					"height": 20,
+					"sizingX": "grow",
+					"dataSource": "Form:C1466.Movie.Sprache_Englisch",
+					"stroke": "#EBFDF3",
+					"fontFamily": ".Helvetica Neue DeskInterface Regular",
+					"fontSize": 14,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Feld15": {
+					"type": "input",
+					"top": 76,
+					"left": 542,
+					"width": 55,
+					"height": 13,
+					"dataSource": "Form:C1466.Movie.Kodi_ID",
+					"dataSourceTypeHint": "integer",
+					"stroke": "#806000",
+					"fontFamily": ".Helvetica Neue DeskInterface Regular",
+					"fontSize": 10,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Schaltfläche1": {
+					"type": "button",
+					"top": 35,
+					"left": 577,
+					"width": 97,
+					"height": 18,
+					"text": "hole Bilder",
+					"method": "ObjectMethods/Schaltfläche1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text": {
+					"type": "text",
+					"top": 78,
+					"left": 301,
+					"width": 32,
+					"height": 12,
+					"stroke": "#FFFFFF",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 9,
+					"text": "IMDB"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 77,
+					"left": 405,
+					"width": 37,
+					"height": 12,
+					"stroke": "#FFFFFF",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 9,
+					"text": "MovieDB"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 78,
+					"left": 507,
+					"width": 37,
+					"height": 12,
+					"stroke": "#FFFFFF",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 9,
+					"text": "KodiID"
+				},
+				"Feld4": {
+					"type": "input",
+					"top": 7,
+					"left": 8,
+					"width": 496,
+					"height": 28,
+					"dataSource": "Form:C1466.Movie.DtTitel",
+					"stroke": "#FDCC09",
+					"fontFamily": ".Helvetica Neue DeskInterface Regular",
+					"fontSize": 18,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Feld10": {
+					"type": "input",
+					"top": 31,
+					"left": 8,
+					"width": 496,
+					"height": 20,
+					"dataSource": "Form:C1466.Movie.EnTitel",
+					"stroke": "#FDCC09",
+					"fontFamily": ".Helvetica Neue DeskInterface Regular",
+					"fontSize": 14,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Feld20": {
+					"type": "input",
+					"top": 48,
+					"left": 8,
+					"width": 496,
+					"height": 20,
+					"dataSource": "Form:C1466.Movie.Titel_Sort",
+					"stroke": "#FDCC09",
+					"fontFamily": ".Helvetica Neue DeskInterface Regular",
+					"fontSize": 14,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		}
+	]
+}

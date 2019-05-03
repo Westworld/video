@@ -1,0 +1,186 @@
+﻿{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerBody": 148,
+	"markerBreak": 148,
+	"markerFooter": 158,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Round Rectangle1": {
+					"type": "rectangle",
+					"top": 10,
+					"left": 10,
+					"width": 378,
+					"height": 128,
+					"strokeWidth": 2,
+					"borderRadius": 5
+				},
+				"Line1": {
+					"type": "line",
+					"top": 36,
+					"left": 10,
+					"width": 378,
+					"strokeWidth": 2
+				},
+				"Text1": {
+					"type": "text",
+					"top": 15,
+					"left": 140,
+					"width": 108,
+					"height": 16,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "  Mitwirkende  "
+				},
+				"Text2": {
+					"type": "text",
+					"top": 46,
+					"left": 26,
+					"width": 66,
+					"height": 12,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"fontSize": 9,
+					"text": "Kennung"
+				},
+				"Field1": {
+					"type": "input",
+					"top": 47,
+					"left": 94,
+					"width": 21,
+					"height": 12,
+					"dataSource": "[Mitwirkende:3]Kennung:3",
+					"stroke": "#000000",
+					"fontSize": 9,
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field2": {
+					"type": "input",
+					"top": 64,
+					"left": 94,
+					"width": 280,
+					"height": 12,
+					"dataSource": "[Personen:17]Suchname:5",
+					"stroke": "#000000",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field4": {
+					"type": "input",
+					"top": 100,
+					"left": 94,
+					"width": 14,
+					"height": 12,
+					"dataSource": "[Personen:17]Bild2:4",
+					"stroke": "#000000",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text3": {
+					"type": "text",
+					"top": 64,
+					"left": 26,
+					"width": 68,
+					"height": 12,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "Name"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 100,
+					"left": 26,
+					"width": 68,
+					"height": 12,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"text": "Geschlecht"
+				}
+			}
+		}
+	]
+}

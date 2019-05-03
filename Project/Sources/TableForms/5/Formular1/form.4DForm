@@ -1,0 +1,565 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 15,
+	"bottomMargin": 15,
+	"markerBody": 398,
+	"markerBreak": 398,
+	"markerFooter": 408,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "DIN A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text7": {
+					"type": "text",
+					"top": 10,
+					"left": 103,
+					"width": 271,
+					"height": 11,
+					"sizingX": "grow",
+					"stroke": "#000000",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 12,
+					"text": "Parameter"
+				},
+				"vRecNum": {
+					"type": "input",
+					"top": 12,
+					"left": 390,
+					"width": 100,
+					"height": 13,
+					"dataSource": "vRecNum",
+					"stroke": "#000000",
+					"fontSize": 9,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Datensatznr"
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/vRecNum.4dm",
+					"events": [
+						"onLoad",
+						"onHeader",
+						"onPrintingBreak"
+					]
+				},
+				"Linie8": {
+					"type": "line",
+					"top": 0,
+					"left": 88,
+					"height": 398,
+					"sizingY": "grow"
+				},
+				"bErster": {
+					"type": "pictureButton",
+					"top": 10,
+					"left": 20,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bErster",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Erster Datensat"
+					},
+					"action": "firstRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/XP - Erster Datensatz.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"dropping": "none",
+					"events": [
+						"onClick"
+					]
+				},
+				"bVorheriger": {
+					"type": "pictureButton",
+					"top": 65,
+					"left": 20,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bVorheriger",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Vorheriger Date"
+					},
+					"action": "previousRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/XP - Vorheriger Datensatz.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"dropping": "none",
+					"events": [
+						"onClick"
+					]
+				},
+				"bNächster": {
+					"type": "pictureButton",
+					"top": 120,
+					"left": 20,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bNächster",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Nächster Datens"
+					},
+					"action": "nextRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/XP - Nächster Datensatz.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"dropping": "none",
+					"events": [
+						"onClick"
+					]
+				},
+				"bLetzter": {
+					"type": "pictureButton",
+					"top": 175,
+					"left": 20,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bLetzter",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Letzter Datensa"
+					},
+					"action": "lastRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/XP - Letzter Datensatz.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"dropping": "none",
+					"events": [
+						"onClick"
+					]
+				},
+				"bLöschen": {
+					"type": "pictureButton",
+					"top": 230,
+					"left": 20,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bLöschen",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Datensatz Lösch"
+					},
+					"action": "deleteRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/XP - Datensatz Löschen.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"dropping": "none",
+					"events": [
+						"onClick"
+					]
+				},
+				"bAbbrechen": {
+					"type": "pictureButton",
+					"top": 285,
+					"left": 20,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bAbbrechen",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Abbrechen"
+					},
+					"action": "cancel",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/XP - Abbrechen.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"dropping": "none",
+					"events": [
+						"onClick"
+					]
+				},
+				"bOK": {
+					"type": "pictureButton",
+					"top": 340,
+					"left": 20,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bOK",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/OK"
+					},
+					"action": "accept",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/library/XP - OK.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"dropping": "none",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text9": {
+					"type": "text",
+					"top": 45,
+					"left": 115,
+					"width": 111,
+					"height": 11,
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 12,
+					"text": "DevTagAmazon : "
+				},
+				"Text10": {
+					"type": "text",
+					"top": 111,
+					"left": 115,
+					"width": 111,
+					"height": 11,
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 12,
+					"text": "FID : "
+				},
+				"Text11": {
+					"type": "text",
+					"top": 158,
+					"left": 115,
+					"width": 111,
+					"height": 11,
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 12,
+					"text": "Pfad_offlineHTML : "
+				},
+				"Text12": {
+					"type": "text",
+					"top": 134,
+					"left": 115,
+					"width": 111,
+					"height": 11,
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 12,
+					"text": "PID : "
+				},
+				"DevTagAmazon": {
+					"type": "input",
+					"top": 45,
+					"left": 231,
+					"width": 234,
+					"height": 57,
+					"dataSource": "[Parameter:5]DevTagAmazon:3",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 12,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"FID": {
+					"type": "input",
+					"top": 111,
+					"left": 231,
+					"width": 48,
+					"height": 10,
+					"dataSource": "[Parameter:5]FID:1",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 12,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Pfad_offlineHTML": {
+					"type": "input",
+					"top": 158,
+					"left": 231,
+					"width": 234,
+					"height": 57,
+					"dataSource": "[Parameter:5]Pfad_offlineHTML:4",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 12,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"PID": {
+					"type": "input",
+					"top": 134,
+					"left": 231,
+					"width": 48,
+					"height": 10,
+					"dataSource": "[Parameter:5]PID:2",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 12,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 221,
+					"left": 115,
+					"width": 111,
+					"height": 11,
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 12,
+					"text": "Pfad_Popcorn"
+				},
+				"Pfad_offlineHTML1": {
+					"type": "input",
+					"top": 221,
+					"left": 231,
+					"width": 234,
+					"height": 57,
+					"dataSource": "[Parameter:5]Pfad_Popcorn:5",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 12,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text2": {
+					"type": "text",
+					"top": 285,
+					"left": 115,
+					"width": 111,
+					"height": 11,
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 12,
+					"text": "URL_Popcorn"
+				},
+				"Pfad_offlineHTML2": {
+					"type": "input",
+					"top": 285,
+					"left": 231,
+					"width": 234,
+					"height": 57,
+					"dataSource": "[Parameter:5]URL_Popcorn:6",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 12,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text3": {
+					"type": "text",
+					"top": 349,
+					"left": 115,
+					"width": 111,
+					"height": 11,
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 12,
+					"text": "Wakanda"
+				},
+				"Pfad_offlineHTML3": {
+					"type": "input",
+					"top": 349,
+					"left": 231,
+					"width": 234,
+					"height": 11,
+					"dataSource": "[Parameter:5]IP_Wakanda:7",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 12,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text4": {
+					"type": "text",
+					"top": 372,
+					"left": 115,
+					"width": 111,
+					"height": 11,
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 12,
+					"text": "API MovieDB"
+				},
+				"Pfad_offlineHTML4": {
+					"type": "input",
+					"top": 372,
+					"left": 231,
+					"width": 234,
+					"height": 11,
+					"dataSource": "[Parameter:5]API_MovieDB:8",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 12,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text5": {
+					"type": "text",
+					"top": 396,
+					"left": 115,
+					"width": 111,
+					"height": 11,
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 12,
+					"text": "Kodi"
+				},
+				"Pfad_offlineHTML5": {
+					"type": "input",
+					"top": 396,
+					"left": 231,
+					"width": 234,
+					"height": 11,
+					"dataSource": "[Parameter:5]Kodi:10",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 12,
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

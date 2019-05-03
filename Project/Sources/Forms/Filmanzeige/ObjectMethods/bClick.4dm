@@ -1,0 +1,23 @@
+If (Form event:C388=On Clicked:K2:4)
+	OBJECT GET COORDINATES:C663(*;"Genre";$left;$top;$right;$bottom)
+	GET WINDOW RECT:C443($winleft;$wintop;$Winright;$winbottom)
+	$win:=Open form window:C675("PopupBlack";Pop up form window:K39:11;$left+$winleft;$bottom+$wintop)
+	  //$win:=Open form window("PopupBlack";Plain window;$left+$winleft;$bottom+$wintop)
+	DIALOG:C40("PopupBlack";*)
+	  //close window($win)
+	
+	  //ARRAY TEXT($text;0)
+	  //APPEND TO ARRAY($text;"zeile 1")
+	  //APPEND TO ARRAY($text;"zeile 2")
+	  //APPEND TO ARRAY($text;"zeile 3")
+	  //APPEND TO ARRAY($text;"zeile 4")
+	  //APPEND TO ARRAY($text;"zeile 5")
+	  //ARRAY BOOLEAN($booL;Size of array($text))
+	
+	  //$ptr:=OBJECT Get pointer(Object named;"arr3")
+	  //COPY ARRAY($bool;$ptr->)
+	  //$ptr:=OBJECT Get pointer(Object named;"arr4")
+	  //COPY ARRAY($text;$ptr->)
+	  //OBJECT SET VISIBLE(*;"LBPopup";True)
+	  //OBJECT SET VISIBLE(*;"LBPopupBlack";True)
+End if 

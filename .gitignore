@@ -1,0 +1,14 @@
+*.4db*
+*.4dd
+*.4DIndy
+*.Match
+Logs
+Project/DerivedData
+*symbols.txt
+userPreferences.Thoma*
+*.4BL
+*.4BK
+*.journal
+Logs
+
+

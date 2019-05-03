@@ -1,0 +1,170 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "DIN A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Viereck": {
+					"type": "rectangle",
+					"top": 1,
+					"left": 0,
+					"width": 695,
+					"height": 553,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"fill": "#000000"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Feld": {
+					"type": "input",
+					"top": 12,
+					"left": 509,
+					"width": 179,
+					"height": 181,
+					"sizingX": "move",
+					"dataSource": "[Filme:1]",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"pictureFormat": "proportionalCenter",
+					"dragging": "custom",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"Feld1": {
+					"type": "input",
+					"top": 30,
+					"left": 8,
+					"width": 496,
+					"height": 22,
+					"dataSource": "[Mitwirkende:3]FID:1",
+					"stroke": "#FDCC09",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 18,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Feld3": {
+					"type": "input",
+					"top": 140,
+					"left": 8,
+					"width": 496,
+					"height": 171,
+					"sizingX": "grow",
+					"dataSource": "[Filme:1]Inhalt:7",
+					"stroke": "#EBFDF3",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 14,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Actoranzeige": {
+					"type": "listbox",
+					"top": 329,
+					"left": 8,
+					"width": 687,
+					"height": 225,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"focusable": false,
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "160px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"selectionMode": "none",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"stroke": "#85A2DF",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"method": "ObjectMethods/Actoranzeige.4dm",
+					"events": [
+						"onDoubleClick"
+					],
+					"columns": [
+						{
+							"name": "Arr1",
+							"dataSource": "Arr1",
+							"dataSourceTypeHint": "picture",
+							"width": 683,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"pictureFormat": "proportionalCenter",
+							"stroke": "#85A2DF",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Kopf1",
+								"text": "Kopf1",
+								"dataSource": "Kopf1",
+								"stroke": "#85A2DF"
+							},
+							"footer": {
+								"name": "Fußteil1",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#85A2DF"
+							}
+						}
+					]
+				}
+			}
+		}
+	]
+}

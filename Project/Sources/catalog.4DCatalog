@@ -1,0 +1,482 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
+<base name="Videodatenbank" uuid="0FDA2768A1A93B4092E09AE367798D84" collation_locale="de">
+	<schema name="DEFAULT_SCHEMA"/>
+	<table name="Filme" uuid="2D60A327334D654DB567F772EA8DCCAB" id="1" leave_tag_on_delete="true">
+		<field name="FID" uuid="C2F09AF8B48E1B4BB1B8FF6E57114798" type="4" unique="true" never_null="true" id="1">
+			<field_extra enterable="false" mandatory="true" position="1">
+				<editor_field_info>
+					<color red="0" green="0" blue="153" alpha="255"/>
+				</editor_field_info>
+			</field_extra>
+		</field>
+		<field name="EnTitel" uuid="42F320DDBCDA884F8426D90FD516B054" type="10" limiting_length="70" never_null="true" id="2">
+			<field_extra mandatory="true" position="7"/>
+		</field>
+		<field name="Land" uuid="5100EDE2C2AA6B4A8AA8360C479A1C4E" type="10" limiting_length="40" never_null="true" id="3">
+			<field_extra position="9"/>
+		</field>
+		<field name="Jahr" uuid="89E02D54D919954FBC10C3308D5664BF" type="10" limiting_length="30" never_null="true" id="4">
+			<field_extra position="10"/>
+		</field>
+		<field name="Genre1" uuid="CE3C03EF91549A439AA3CB04AD4A6F25" type="10" limiting_length="30" never_null="true" id="5">
+			<field_extra enumeration_id="15000" position="11"/>
+		</field>
+		<field name="Genre2" uuid="E3DD57C225661B4D9F59734A7E4CDDDA" type="10" limiting_length="30" never_null="true" id="6">
+			<field_extra enumeration_id="15000" position="12"/>
+		</field>
+		<field name="Inhalt" uuid="44F5FC62F86B88468B4BC057E495B4FC" type="10" never_null="true" id="7">
+			<field_extra multi_line="true" position="13"/>
+		</field>
+		<field name="MKV_Pfad2" uuid="0477BA4C0A0D7848A8AD0B6C7FE1F412" type="10" never_null="true" id="8">
+			<field_extra position="28"/>
+		</field>
+		<field name="DtTitel" uuid="8650A0EE4027F34B9F95664239D079F8" type="10" limiting_length="70" never_null="true" id="9">
+			<field_extra mandatory="true" position="6"/>
+		</field>
+		<field name="Länge" uuid="439815448FB89A408F2E57F55632A2D7" type="3" never_null="true" id="10">
+			<field_extra position="14"/>
+		</field>
+		<field name="CD_ID" uuid="E3F06FF92122AF41A90D8AC4F2FFE759" type="3" never_null="true" id="11">
+			<field_extra position="15">
+				<editor_field_info>
+					<color red="216" green="30" blue="5" alpha="255"/>
+				</editor_field_info>
+			</field_extra>
+		</field>
+		<field name="Bild" uuid="C239F01C98B6C548928BC9E6F9F8E606" type="12" never_null="true" id="14">
+			<field_extra multi_line="false" position="18">
+				<editor_field_info>
+					<color red="255" green="255" blue="255" alpha="0"/>
+				</editor_field_info>
+			</field_extra>
+		</field>
+		<field name="imdb" uuid="D2A872A48CB92F4F974BE2BE5B60CD59" type="10" limiting_length="20" never_null="true" id="15">
+			<field_extra position="2"/>
+		</field>
+		<field name="OFDb" uuid="72286C8BA2935E4680B08F243601300D" type="10" limiting_length="20" never_null="true" id="16">
+			<field_extra position="3"/>
+		</field>
+		<field name="Bemerkung" uuid="AABA71E277CF5143BEF65A4D771030E3" type="10" never_null="true" id="17">
+			<field_extra position="24">
+				<editor_field_info>
+					<color red="216" green="30" blue="5" alpha="255"/>
+				</editor_field_info>
+			</field_extra>
+		</field>
+		<field name="Mediaart" uuid="2BADAC8ACE3ADF438FB094B02DABB5A7" type="3" never_null="true" id="19">
+			<field_extra position="16">
+				<editor_field_info>
+					<color red="216" green="30" blue="5" alpha="255"/>
+				</editor_field_info>
+			</field_extra>
+		</field>
+		<field name="purchasedate" uuid="6F78023BFA837345B6AA4FB2F7ADF87F" type="8" never_null="true" id="20">
+			<field_extra position="17">
+				<editor_field_info>
+					<color red="216" green="30" blue="5" alpha="255"/>
+				</editor_field_info>
+			</field_extra>
+		</field>
+		<field name="Filmformat" uuid="9B817C7CEF54204BAACFF3F736DF136C" type="10" limiting_length="10" never_null="true" id="21">
+			<field_extra position="26">
+				<editor_field_info>
+					<color red="216" green="30" blue="5" alpha="255"/>
+				</editor_field_info>
+			</field_extra>
+		</field>
+		<field name="MKV_Pfad" uuid="0D4E3195994ABB43BD27220113087C6A" type="10" never_null="true" id="22">
+			<field_extra position="27">
+				<editor_field_info>
+					<color red="216" green="30" blue="5" alpha="255"/>
+				</editor_field_info>
+			</field_extra>
+		</field>
+		<field name="Engl_Beschreibung" uuid="D3665DC2349A61408F4F367DACAC2606" type="10" never_null="true" id="23">
+			<field_extra position="29"/>
+		</field>
+		<field name="MovieDB" uuid="4CE4E33C6A3D824794121EF37ED11B9B" type="4" never_null="true" id="24">
+			<field_extra position="4"/>
+		</field>
+		<field name="MovieDB_Collection" uuid="2735370C6FEDD543A070497F5C9F6AEF" type="4" never_null="true" id="25">
+			<field_extra position="30"/>
+		</field>
+		<field name="Fanart" uuid="B8682663EEDD48659D7BB0BDA9C9F07C" type="12" blob_switch_size="100" never_null="true" id="26">
+			<field_extra multi_line="false" position="19">
+				<editor_field_info>
+					<color red="255" green="255" blue="255" alpha="0"/>
+				</editor_field_info>
+			</field_extra>
+		</field>
+		<field name="WertungA" uuid="1583534CC1F74CAEA26142B482F215EE" type="3" never_null="true" id="27">
+			<field_extra position="20"/>
+		</field>
+		<field name="WertungT" uuid="2BBC6ACBC82F4FA38E843247265EAEBB" type="3" never_null="true" id="28">
+			<field_extra position="21"/>
+		</field>
+		<field name="merklisteA" uuid="9DCA27EC30794C0D920244B16A3E4D5F" type="1" never_null="true" id="29">
+			<field_extra position="22"/>
+		</field>
+		<field name="merklisteT" uuid="DEDB942DE93F4F23AEA27A6EDB794709" type="1" never_null="true" id="30">
+			<field_extra position="23"/>
+		</field>
+		<field name="Kodi_ID" uuid="C19E29491D724FACA8D08991688BC10B" type="4" never_null="true" id="31">
+			<field_extra position="5"/>
+		</field>
+		<field name="Titel_Sort" uuid="B147F6D51BFF409D8D46125CB5F7B455" type="10" limiting_length="255" never_null="true" id="32">
+			<field_extra position="8"/>
+		</field>
+		<field name="streamdetails" uuid="BDF9A134CBDC4AEF99E5A5EED0E0A17D" type="10" never_null="true" id="35">
+			<field_extra position="25"/>
+		</field>
+		<field name="Crew" uuid="9F81AE80F88443329709509C9EEF6488" type="21" never_null="true" id="36">
+			<field_extra position="31"/>
+		</field>
+		<primary_key field_name="FID" field_uuid="C2F09AF8B48E1B4BB1B8FF6E57114798"/>
+		<table_extra trigger_insert="true" trigger_update="true" trigger_delete="true" input_form="Testeingabe" output_form="Formular1">
+			<editor_table_info fields_ordering="2" displayable_fields_count="32">
+				<color red="0" green="0" blue="0" alpha="0"/>
+				<coordinates left="84.63671875" top="2.3046875" width="233.53515625" height="717.38671875"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="Mitwirkende" uuid="2ADE6163DDE7E741A8ECB825114BB885" id="3" leave_tag_on_delete="true">
+		<field name="FID" uuid="C7AE867D6CFAF84393895B425DDDE338" type="4" never_null="true" id="1">
+			<field_extra enterable="false" mandatory="true">
+				<editor_field_info>
+					<color red="0" green="0" blue="153" alpha="255"/>
+				</editor_field_info>
+			</field_extra>
+		</field>
+		<field name="PID" uuid="CE0C16CA71DD35449528C4008AD6C441" type="4" never_null="true" id="2">
+			<field_extra enterable="false" mandatory="true">
+				<editor_field_info>
+					<color red="238" green="0" blue="0" alpha="255"/>
+				</editor_field_info>
+			</field_extra>
+		</field>
+		<field name="Kennung" uuid="0F110E11A6483F418BF12998F1D3A97A" type="10" limiting_length="3" never_null="true" id="3"/>
+		<field name="Rolle" uuid="182F8F8D4B79034099720EAAE7D46E89" type="10" limiting_length="80" never_null="true" id="4"/>
+		<field name="ID" uuid="EA863FE9F85742D6B361C97D513C82C1" type="10" unique="true" autogenerate="true" store_as_UUID="true" id="5"/>
+		<primary_key field_name="ID" field_uuid="EA863FE9F85742D6B361C97D513C82C1"/>
+		<table_extra trigger_insert="true" trigger_update="true" trigger_delete="true" input_form="Actor_Detail" output_form="Liste">
+			<editor_table_info displayable_fields_count="5">
+				<color red="0" green="0" blue="0" alpha="0"/>
+				<coordinates left="460.8828125" top="3.1796875" width="146" height="154"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="Parameter" uuid="C1EF8CA701C50C4F8B671478DB0C7714" id="5" leave_tag_on_delete="true">
+		<field name="FID" uuid="A43EF6F729574240BD683C3EC72701B9" type="4" never_null="true" id="1"/>
+		<field name="PID" uuid="5EED34A4967A35438E17F0248FFF7D03" type="4" never_null="true" id="2"/>
+		<field name="DevTagAmazon" uuid="3222386C4AD02F44802CE3B5512055D7" type="10" never_null="true" id="3"/>
+		<field name="Pfad_offlineHTML" uuid="FF6BB62B2F538549A46B194FC208DB46" type="10" never_null="true" id="4"/>
+		<field name="Pfad_Popcorn" uuid="F4834D49A05F1B4A8BD9C4CD618458A2" type="10" never_null="true" id="5"/>
+		<field name="URL_Popcorn" uuid="253D628AA292DF4D99FFD756BC7DDF77" type="10" never_null="true" id="6"/>
+		<field name="IP_Wakanda" uuid="DB621C33EB7E284C8A7575B429DE3181" type="10" limiting_length="255" never_null="true" id="7"/>
+		<field name="API_MovieDB" uuid="5612F610CAA6F04FA5868973D7816AEC" type="10" limiting_length="255" never_null="true" id="8"/>
+		<field name="ID" uuid="8A17E74850524FD1961AAE3CF8AF80F6" type="4" unique="true" autosequence="true" id="9"/>
+		<field name="Kodi" uuid="9B8C704FBF67485AB58B0EA54E944E5F" type="10" limiting_length="255" never_null="true" id="10"/>
+		<primary_key field_name="ID" field_uuid="8A17E74850524FD1961AAE3CF8AF80F6"/>
+		<table_extra visible="false" input_form="Formular1" output_form="Layout1">
+			<editor_table_info displayable_fields_count="12">
+				<color red="0" green="0" blue="0" alpha="0"/>
+				<coordinates left="1029" top="366" width="210" height="298"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="Bilder" uuid="F61BC512E87AFC48BCEFDE2E864A2FD5" id="8" leave_tag_on_delete="true">
+		<field name="FID" uuid="D18695EDF29DC84C8DF3A461BAECADAA" type="4" never_null="true" id="1">
+			<field_extra>
+				<editor_field_info>
+					<color red="0" green="0" blue="153" alpha="255"/>
+				</editor_field_info>
+			</field_extra>
+		</field>
+		<field name="SubID" uuid="365DF5BDB020294E863862AA00CB801E" type="4" never_null="true" id="2"/>
+		<field name="dasbild" uuid="1447DA8F8337314DB5B24C23197D109E" type="12" never_null="true" id="6">
+			<field_extra multi_line="false">
+				<qt_spatial_settings codec_type="jpeg" depth="0" spatial_quality="512"/>
+				<editor_field_info>
+					<color red="255" green="255" blue="255" alpha="0"/>
+				</editor_field_info>
+			</field_extra>
+		</field>
+		<field name="Kinoposter" uuid="EC499730CD09BF49B186A45ACAA9C65C" type="1" never_null="true" id="7"/>
+		<field name="ID" uuid="9E4EC77684A944209E2CE300E3625C0E" type="4" unique="true" autosequence="true" id="8"/>
+		<primary_key field_name="ID" field_uuid="9E4EC77684A944209E2CE300E3625C0E"/>
+		<table_extra trigger_insert="true" trigger_update="true" input_form="Input" output_form="subform">
+			<editor_table_info displayable_fields_count="5">
+				<color red="0" green="0" blue="0" alpha="0"/>
+				<coordinates left="458.60546875" top="186.1796875" width="153" height="162"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="HTTP_query" uuid="7C03BDC3C947054583369E48ACA529AB" id="9" leave_tag_on_delete="true">
+		<field name="HTTP_ID" uuid="B2291842E15F56409F32566EE92E27BB" type="10" limiting_length="20" never_null="true" id="1"/>
+		<field name="Anfangstext" uuid="A522EE91C7A15E45B86917488D7D5082" type="10" never_null="true" id="2"/>
+		<field name="Alternativer _Anfangstext" uuid="DAE246491298C141AF3C437D9FB7A4FD" type="10" never_null="true" id="3"/>
+		<field name="Springe_bis" uuid="69F76B3BB89B894EADCA7438C4091A50" type="10" never_null="true" id="4"/>
+		<field name="Wort_Endetext" uuid="8A226C9523F43140B15672E3CA899930" type="10" never_null="true" id="5"/>
+		<field name="Schleife_Alternativer_Endetext" uuid="33F50165BF8BC94DA62079D9FB8ACDFD" type="10" never_null="true" id="6"/>
+		<field name="Schleife" uuid="61A4AEDAFA129A46A8AE2CB2F36A0861" type="1" never_null="true" id="7"/>
+		<field name="Schleife_Endetext" uuid="4E9EB80EB981DC43B109C7BDBB51E458" type="10" never_null="true" id="8"/>
+		<field name="Springe_bis_Teil2" uuid="92C1393E94BCB240B9293D9E9B0D72F6" type="10" never_null="true" id="9"/>
+		<field name="Zusatzwort_Springe_bis" uuid="21B1933ECF20324FA509F8062ABBCB6D" type="10" never_null="true" id="10"/>
+		<field name="Zusatzwort_Endetext" uuid="3FB150F6FD7E354C95E25F4B3D3A99BC" type="10" never_null="true" id="11"/>
+		<field name="Optional" uuid="A6F9B3A4C665F8468DCA7CC7C5378C45" type="1" never_null="true" id="12"/>
+		<field name="ID" uuid="783CD7B1EB7140CD8AC1ED0F2AEFB7A5" type="4" unique="true" autosequence="true" id="13"/>
+		<primary_key field_name="ID" field_uuid="783CD7B1EB7140CD8AC1ED0F2AEFB7A5"/>
+		<table_extra input_form="Eingabe" output_form="Ausgabe">
+			<editor_table_info displayable_fields_count="13">
+				<color red="0" green="0" blue="0" alpha="0"/>
+				<coordinates left="1032.921875" top="0" width="227" height="333"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="Personen" uuid="B423C94677EB4B59A4CDFC5219C92A68" id="17">
+		<field name="PID" uuid="86AF08F1396F459E9979355EEC44C5CC" type="4" unique="true" autosequence="true" not_null="true" id="1">
+			<field_extra position="1">
+				<editor_field_info>
+					<color red="216" green="30" blue="5" alpha="255"/>
+				</editor_field_info>
+			</field_extra>
+		</field>
+		<field name="Bild" uuid="18A79F98A5624664AD759BFE44155820" type="12" never_null="true" id="2">
+			<field_extra position="6"/>
+		</field>
+		<field name="IMDB" uuid="D5996B825F414574B5D2336D62BD5F0F" type="10" limiting_length="255" never_null="true" id="3">
+			<field_extra position="3"/>
+		</field>
+		<field name="Bild2" uuid="37A897279C4B4F7F823E6F2515030D12" type="12" never_null="true" id="4">
+			<field_extra position="7"/>
+		</field>
+		<field name="Suchname" uuid="78CD353777AB4C029E213879094D55C8" type="10" limiting_length="50" never_null="true" id="5">
+			<field_extra mandatory="true" position="5"/>
+		</field>
+		<field name="Geboren" uuid="5546D4D12EB74437A3B88EE95A70A1B2" type="10" limiting_length="255" never_null="true" id="6">
+			<field_extra position="9"/>
+		</field>
+		<field name="Herkunft" uuid="83430562CBCB4355AD339F507AE6BFD9" type="10" limiting_length="255" never_null="true" id="7">
+			<field_extra position="11"/>
+		</field>
+		<field name="Kommentar" uuid="68B00867A7DE4AB2B274BEC498D87E4C" type="10" never_null="true" id="8">
+			<field_extra position="12"/>
+		</field>
+		<field name="OFDB" uuid="7BAAD84F9EDA4EBBA678A73DE4DAA303" type="10" limiting_length="255" never_null="true" id="9">
+			<field_extra position="2"/>
+		</field>
+		<field name="Bild3" uuid="244FE06E9B9C4B96B3823FEF2C5856B3" type="12" never_null="true" id="10">
+			<field_extra position="8"/>
+		</field>
+		<field name="Engl_Beschreibung" uuid="7E5E42F86704470180B2B0BA7AC5E9C5" type="10" never_null="true" id="11">
+			<field_extra position="13"/>
+		</field>
+		<field name="MovieDB" uuid="6BF8BD7344CB43C2BC6E666DE2A6CD52" type="4" never_null="true" id="12">
+			<field_extra position="4"/>
+		</field>
+		<field name="Todestag" uuid="5751E3D3905D45B4A503FE3EE8DC3F73" type="10" limiting_length="255" never_null="true" id="13">
+			<field_extra position="10"/>
+		</field>
+		<primary_key field_name="PID" field_uuid="86AF08F1396F459E9979355EEC44C5CC"/>
+		<table_extra input_form="Eingabetest" output_form="Ausgabe">
+			<editor_table_info fields_ordering="2" displayable_fields_count="14">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="719.99609375" top="24" width="220" height="339.09765625"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<relation uuid="A794C956F34D5149A8C3A04BBBA3E901" name_Nto1="Film" name_1toN="Mitwirkende" auto_load_Nto1="true" auto_load_1toN="true" foreign_key="false" state="1" integrity="delete">
+		<related_field kind="source">
+			<field_ref uuid="C7AE867D6CFAF84393895B425DDDE338" name="FID">
+				<table_ref uuid="2ADE6163DDE7E741A8ECB825114BB885" name="Mitwirkende"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="C2F09AF8B48E1B4BB1B8FF6E57114798" name="FID">
+				<table_ref uuid="2D60A327334D654DB567F772EA8DCCAB" name="Filme"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_create="true" choice_field="2" entry_wildchar="false" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="false" smartlink="false">
+				<color red="0" green="0" blue="153" alpha="255"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<relation uuid="3D98EA95FE3344E5BCB3399A1842656A" name_Nto1="Person" name_1toN="spieltinFilmen" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1" integrity="delete">
+		<related_field kind="source">
+			<field_ref uuid="CE0C16CA71DD35449528C4008AD6C441" name="PID">
+				<table_ref uuid="2ADE6163DDE7E741A8ECB825114BB885" name="Mitwirkende"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="86AF08F1396F459E9979355EEC44C5CC" name="PID">
+				<table_ref uuid="B423C94677EB4B59A4CDFC5219C92A68" name="Personen"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="false" smartlink="true">
+				<color red="249" green="130" blue="127" alpha="255"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<relation uuid="169795B7436B934699DB0CD76CB917FC" name_Nto1="Filmzumbild" name_1toN="Bilder" auto_load_Nto1="true" auto_load_1toN="true" foreign_key="false" state="1" integrity="delete">
+		<related_field kind="source">
+			<field_ref uuid="D18695EDF29DC84C8DF3A461BAECADAA" name="FID">
+				<table_ref uuid="F61BC512E87AFC48BCEFDE2E864A2FD5" name="Bilder"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="C2F09AF8B48E1B4BB1B8FF6E57114798" name="FID">
+				<table_ref uuid="2D60A327334D654DB567F772EA8DCCAB" name="Filme"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_create="true" choice_field="1" entry_wildchar="false" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="false" smartlink="false">
+				<color red="0" green="0" blue="153" alpha="255"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<index kind="regular" uuid="274648028564428F9389F785D95CC32E" type="1">
+		<field_ref uuid="78CD353777AB4C029E213879094D55C8" name="Suchname">
+			<table_ref uuid="B423C94677EB4B59A4CDFC5219C92A68" name="Personen"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="3158F986C960434CAC290DDB67308C2D" type="1">
+		<field_ref uuid="D5996B825F414574B5D2336D62BD5F0F" name="IMDB">
+			<table_ref uuid="B423C94677EB4B59A4CDFC5219C92A68" name="Personen"/>
+		</field_ref>
+	</index>
+	<index kind="regular" name="kino" uuid="34C59FA6909C0B418B4090577E8A867C" type="1">
+		<field_ref uuid="D18695EDF29DC84C8DF3A461BAECADAA" name="FID">
+			<table_ref uuid="F61BC512E87AFC48BCEFDE2E864A2FD5" name="Bilder"/>
+		</field_ref>
+		<field_ref uuid="EC499730CD09BF49B186A45ACAA9C65C" name="Kinoposter">
+			<table_ref uuid="F61BC512E87AFC48BCEFDE2E864A2FD5" name="Bilder"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="3ABBCBDD8BCF4A94AEE4511194925C17" type="3">
+		<field_ref uuid="9DCA27EC30794C0D920244B16A3E4D5F" name="merklisteA">
+			<table_ref uuid="2D60A327334D654DB567F772EA8DCCAB" name="Filme"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="3E348375A05DCF40BB1E86DBF07C8907" type="7">
+		<field_ref uuid="D18695EDF29DC84C8DF3A461BAECADAA" name="FID">
+			<table_ref uuid="F61BC512E87AFC48BCEFDE2E864A2FD5" name="Bilder"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="45C0D5A6B0904841B071F53AB6BFF3B7" type="7">
+		<field_ref uuid="CE0C16CA71DD35449528C4008AD6C441" name="PID">
+			<table_ref uuid="2ADE6163DDE7E741A8ECB825114BB885" name="Mitwirkende"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="4695D868CB7B43F8BE776F429C294858" type="3">
+		<field_ref uuid="1583534CC1F74CAEA26142B482F215EE" name="WertungA">
+			<table_ref uuid="2D60A327334D654DB567F772EA8DCCAB" name="Filme"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="54D6B6E13D357449A5B6959D2DC32C92" type="7">
+		<field_ref uuid="B2291842E15F56409F32566EE92E27BB" name="HTTP_ID">
+			<table_ref uuid="7C03BDC3C947054583369E48ACA529AB" name="HTTP_query"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="577B49B09C6C43278CE4C37FC7A0C70F" type="7">
+		<field_ref uuid="C19E29491D724FACA8D08991688BC10B" name="Kodi_ID">
+			<table_ref uuid="2D60A327334D654DB567F772EA8DCCAB" name="Filme"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="592B8ABB17DE46BA92D0929E4114E620" type="7">
+		<field_ref uuid="D2A872A48CB92F4F974BE2BE5B60CD59" name="imdb">
+			<table_ref uuid="2D60A327334D654DB567F772EA8DCCAB" name="Filme"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="5CA324E1764942E5AD816A349D03F50E" type="3">
+		<field_ref uuid="2BADAC8ACE3ADF438FB094B02DABB5A7" name="Mediaart">
+			<table_ref uuid="2D60A327334D654DB567F772EA8DCCAB" name="Filme"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="65BDE18F69DDAE4CBF719BDCD87B1025" type="7">
+		<field_ref uuid="8650A0EE4027F34B9F95664239D079F8" name="DtTitel">
+			<table_ref uuid="2D60A327334D654DB567F772EA8DCCAB" name="Filme"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="695A5498E5024FCDBDD3A51D0FF040C7" type="3">
+		<field_ref uuid="DEDB942DE93F4F23AEA27A6EDB794709" name="merklisteT">
+			<table_ref uuid="2D60A327334D654DB567F772EA8DCCAB" name="Filme"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="6D0449917A4347CF833E3B5DA80EF808" type="7">
+		<field_ref uuid="6F78023BFA837345B6AA4FB2F7ADF87F" name="purchasedate">
+			<table_ref uuid="2D60A327334D654DB567F772EA8DCCAB" name="Filme"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="75648EEABBEB0047870113727856D178" type="7">
+		<field_ref uuid="CE3C03EF91549A439AA3CB04AD4A6F25" name="Genre1">
+			<table_ref uuid="2D60A327334D654DB567F772EA8DCCAB" name="Filme"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="99E1E6952D71B446B86DD34DC5F2B6D3" type="7">
+		<field_ref uuid="C2F09AF8B48E1B4BB1B8FF6E57114798" name="FID">
+			<table_ref uuid="2D60A327334D654DB567F772EA8DCCAB" name="Filme"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="9D51E7E07050304B8515BC27CDC42059" type="7">
+		<field_ref uuid="C7AE867D6CFAF84393895B425DDDE338" name="FID">
+			<table_ref uuid="2ADE6163DDE7E741A8ECB825114BB885" name="Mitwirkende"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="A64FE1D4F96BAA4AAF972B4811E3271E" type="7">
+		<field_ref uuid="E3DD57C225661B4D9F59734A7E4CDDDA" name="Genre2">
+			<table_ref uuid="2D60A327334D654DB567F772EA8DCCAB" name="Filme"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="A8309E321A6E45E994BEB72984F22C26" type="1">
+		<field_ref uuid="4CE4E33C6A3D824794121EF37ED11B9B" name="MovieDB">
+			<table_ref uuid="2D60A327334D654DB567F772EA8DCCAB" name="Filme"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="AEC88E94016C49D48228640D9B995541" type="1">
+		<field_ref uuid="6BF8BD7344CB43C2BC6E666DE2A6CD52" name="MovieDB">
+			<table_ref uuid="B423C94677EB4B59A4CDFC5219C92A68" name="Personen"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="B9B1E9F078E94AC8B6F718B65DA26ECF" type="7">
+		<field_ref uuid="86AF08F1396F459E9979355EEC44C5CC" name="PID">
+			<table_ref uuid="B423C94677EB4B59A4CDFC5219C92A68" name="Personen"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" name="pk_index_4" uuid="C152C830520B49338E56219BA8599A3C" type="7">
+		<field_ref uuid="9E4EC77684A944209E2CE300E3625C0E" name="ID">
+			<table_ref uuid="F61BC512E87AFC48BCEFDE2E864A2FD5" name="Bilder"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="CD396B66079745DBA5A6DEBA241A249F" type="3">
+		<field_ref uuid="2BBC6ACBC82F4FA38E843247265EAEBB" name="WertungT">
+			<table_ref uuid="2D60A327334D654DB567F772EA8DCCAB" name="Filme"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" name="pk_index_1" uuid="D9A52D5DAC4340A4B015656BE0248AC3" type="7">
+		<field_ref uuid="EA863FE9F85742D6B361C97D513C82C1" name="ID">
+			<table_ref uuid="2ADE6163DDE7E741A8ECB825114BB885" name="Mitwirkende"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="DDD4A7951018CE43A02E31289504C3FC" type="7">
+		<field_ref uuid="42F320DDBCDA884F8426D90FD516B054" name="EnTitel">
+			<table_ref uuid="2D60A327334D654DB567F772EA8DCCAB" name="Filme"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" name="pk_index_5" uuid="F5B37B184C8744B180476D40644DB8AA" type="7">
+		<field_ref uuid="783CD7B1EB7140CD8AC1ED0F2AEFB7A5" name="ID">
+			<table_ref uuid="7C03BDC3C947054583369E48ACA529AB" name="HTTP_query"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" name="pk_index_3" uuid="FD08581C3F7D42778022620487DC2B08" type="7">
+		<field_ref uuid="8A17E74850524FD1961AAE3CF8AF80F6" name="ID">
+			<table_ref uuid="C1EF8CA701C50C4F8B671478DB0C7714" name="Parameter"/>
+		</field_ref>
+	</index>
+	<base_extra data_file_path=":Videodatenbank.4DD" __stringCompHash="icu:63.1.0" __keywordBuildingHash="icu:63.1.0">
+		<temp_folder folder_selector="data"/>
+		<journal_file journal_file_enabled="true"/>
+	</base_extra>
+</base>

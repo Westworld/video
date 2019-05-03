@@ -1,0 +1,90 @@
+﻿{
+	"destination": "listScreen",
+	"rightMargin": 0,
+	"bottomMargin": 10,
+	"markerBody": 93,
+	"markerBreak": 96,
+	"markerFooter": 96,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "DIN A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"bild": {
+					"type": "input",
+					"top": 3,
+					"left": 2,
+					"width": 105,
+					"height": 90,
+					"sizingX": "grow",
+					"dataSource": "[Bilder:8]dasbild:6",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"scrollbarHorizontal": "visible",
+					"pictureFormat": "proportionalCenter",
+					"dragging": "custom",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Linie4": {
+					"type": "line",
+					"top": -5,
+					"left": 0,
+					"height": 98,
+					"stroke": "#A8A8A8"
+				},
+				"Linie5": {
+					"type": "line",
+					"top": -5,
+					"left": 107,
+					"height": 98,
+					"sizingX": "move",
+					"stroke": "#A8A8A8"
+				}
+			}
+		}
+	]
+}

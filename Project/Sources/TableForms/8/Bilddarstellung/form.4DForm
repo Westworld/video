@@ -1,0 +1,84 @@
+﻿{
+	"destination": "detailScreen",
+	"windowMinWidth": 250,
+	"windowMinHeight": 250,
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerBody": 416,
+	"markerBreak": 416,
+	"markerFooter": 426,
+	"events": [
+		"onLoad",
+		"onDragOver",
+		"onResize",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "DIN A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Viereck": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 1,
+					"width": 402,
+					"height": 386,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"fill": "#000000"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 0,
+					"left": 0,
+					"width": 403,
+					"height": 349,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "[Bilder:8]dasbild:6",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 12,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"pictureFormat": "proportionalCenter",
+					"dragging": "custom",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Field": {
+					"type": "checkbox",
+					"top": 369,
+					"left": 32,
+					"width": 91,
+					"height": 17,
+					"sizingY": "move",
+					"text": "Kinoposter",
+					"dataSource": "[Bilder:8]Kinoposter:7",
+					"stroke": "#FFFFFF",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 12,
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}
