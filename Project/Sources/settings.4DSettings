@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?><preferences stamp="569">
+﻿<?xml version="1.0" encoding="UTF-8"?><preferences stamp="570">
 	<com.4d>
 		<database>
 			<cache flush_buffer_delay="20s" size_fixed="32" size_maximum="3000" size_reserved="128"/>

@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
-<base name="Videodatenbank" uuid="0FDA2768A1A93B4092E09AE367798D84" collation_locale="de">
-	<schema name="DEFAULT_SCHEMA"/>
+<base name="" uuid="0FDA2768A1A93B4092E09AE367798D84" collation_locale="de">
 	<table name="Filme" uuid="2D60A327334D654DB567F772EA8DCCAB" id="1" leave_tag_on_delete="true">
 		<field name="FID" uuid="C2F09AF8B48E1B4BB1B8FF6E57114798" type="4" unique="true" never_null="true" id="1">
 			<field_extra enterable="false" mandatory="true" position="1">
